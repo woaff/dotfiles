@@ -1,0 +1,61 @@
+{
+  "coc.preferences.formatOnSave": true,
+  "prettier.disableLanguages": ["markdown"],
+  "inlayHint.enable": false,
+  "signature.enable": false,
+  "explorer.width": 30,
+  "explorer.icon.enableNerdfont": true,
+  "explorer.previewAction.onHover": false,
+  "explorer.keyMappings.global": {
+    "<CR>": ["expandable?", "expand", "open"],
+    "v": "open:vsplit"
+  },
+  "xml.java.home": "/usr/lib/jvm/java-17-openjdk-17.0.14.0.7-6.fc41",
+  "clangd.path": "~/.config/coc/extensions/coc-clangd-data/install/19.1.2/clangd_19.1.2/bin/clangd",
+  "clangd.arguments": ["--function-arg-placeholders=0"],
+  "java.configuration.runtimes": [
+    {
+      "name": "JavaSE-17",
+      "path": "/usr/lib/jvm/java-17-openjdk-17.0.14.0.7-6.fc41",
+      "default": true
+    }
+  ],
+  "coc.preferences.useQuickfixForLocations": true,
+  "java.jdt.ls.lombokSupport.enabled": false,
+  "java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx1G -Xms100m -Xlog:disable -javaagent:\"$HOME/.config/coc/extensions/node_modules/coc-java-lombok/jar/lombok.jar\"",
+  "languageserver": {
+    "bash": {
+      "command": "bash-language-server",
+      "args": ["start"],
+      "filetypes": ["sh"],
+      "ignoredRootPaths": ["~"]
+    },
+    "vimls": {
+      "command": "vim-language-server",
+      "args": ["--stdio"],
+      "initializationOptions": {
+        "isNeovim": false,
+        "iskeyword": "@,48-57,_,192-255,-#",
+        "vimruntime": "",
+        "runtimepath": "",
+        "diagnostic": {
+          "enable": true
+        }
+      },
+      "filetypes": ["vim"]
+    }
+  },
+  "diagnostic-languageserver.filetypes": {
+    "markdown": "markdownlint",
+    "sh": "shellcheck",
+    "vim": "vint"
+  },
+  "diagnostic-languageserver.formatFiletypes": {
+    "sh": "shfmt"
+  },
+  "snippets.ultisnips.directories": [
+    "UltiSnips",
+    "$HOME/.vim/UltiSnips/",
+    "$HOME/.vim/plugged/vim-snippets/UltiSnips/"
+  ]
+}

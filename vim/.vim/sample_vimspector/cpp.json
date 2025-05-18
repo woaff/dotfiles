@@ -1,0 +1,23 @@
+{
+  "configurations": {
+    "run - vscode-cpptools": {
+      "adapter": "vscode-cpptools",
+      "filetypes": ["cpp", "c", "objc", "rust"],
+      "configuration": {
+        "name": "cpp: Launch",
+        "type": "cppdbg",
+        "request": "launch",
+        "cwd": "${workspaceRoot}",
+        "program": "${workspaceRoot}/${fileBasenameNoExtension}",
+        "console": "externalTerminal",
+        "stopOnEntry": true,
+        "MIMode": "gdb"
+      },
+      "breakpoints": {
+        "exception": {
+          "all": ""
+        }
+      }
+    }
+  }
+}

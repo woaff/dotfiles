@@ -1,0 +1,45 @@
+{
+  "adapters": {
+    "coc-java-debug": {
+      "port": "${AdapterPort}"
+    }
+  },
+  "configurations": {
+    "run - Java Launch": {
+      "adapter": "coc-java-debug",
+      "filetypes": ["java"],
+      "configuration": {
+        "name": "java: Launch",
+        "type": "java",
+        "request": "launch",
+        "mainClass": "${fileBasenameNoExtension}",
+        "sourcePaths": ["${workspaceRoot}"],
+        "classPaths": ["${workspaceRoot}"],
+        "console": "integratedTerminal",
+        "stopOnEntry": true
+      }
+    },
+    "run - Java Attach": {
+      "adapter": "coc-java-debug",
+      "filetypes": ["java"],
+      "configuration": {
+        "name": "java: Attach",
+        "type": "java",
+        "request": "attach",
+        "mainClass": "com.demo.${fileBasenameNoExtension}",
+        "sourcePaths": ["${workspaceRoot}/src/main/java"],
+        "classPaths": ["${workspaceRoot}/target/classes"],
+        "console": "integratedTerminal",
+        "stopOnEntry": true,
+        "host": "localhost",
+        "port": "${port}"
+      }
+    },
+    "breakpoints": {
+      "exception": {
+        "uncaught": "N",
+        "caught": "N"
+      }
+    }
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "default": true,
+  "no-multiple-blanks":false,
+  "line_length": false
+}

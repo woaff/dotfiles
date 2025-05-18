@@ -1,0 +1,45 @@
+{
+  "configurations": {
+    "run - Nodejs Launch": {
+      "adapter": "js-debug",
+      "filetypes": ["javascript", "typescript"],
+      "configuration": {
+        "name": "Nodejs: Launch",
+        "type": "pwa-node",
+        "request": "launch",
+        "cwd": "${workspaceRoot}",
+        "program": "${file}",
+        "console": "integratedTerminal",
+        "stopOnEntry": true,
+        "protocol": "auto"
+      },
+      "breakpoints": {
+        "exception": {
+          "all": "N",
+          "uncaught": "N"
+        }
+      }
+    },
+    "run - Nodejs Attach": {
+      "adapter": "js-debug",
+      "filetypes": ["javascript", "typescript"],
+      "configuration": {
+        "name": "Nodejs: Attach",
+        "type": "pwa-node",
+        "request": "attach",
+        "cwd": "${workspaceRoot}",
+        "program": "${file}",
+        "console": "integratedTerminal",
+        "stopOnEntry": true,
+        "protocol": "auto",
+        "processId": "${processId}"
+      },
+      "breakpoints": {
+        "exception": {
+          "all": "N",
+          "uncaught": "N"
+        }
+      }
+    }
+  }
+}
