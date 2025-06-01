@@ -153,7 +153,6 @@ let g:coc_global_extensions = [
 		\ 'coc-markdownlint',
 		\ 'coc-pyright',
 		\ 'coc-sql',
-		\ 'coc-pairs',
 		\ ]
 
 " coc suggestion box change color
@@ -427,7 +426,7 @@ Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-ragtag'
 Plug 'tpope/vim-rsi'
 Plug 'tpope/vim-endwise'
-" Plug 'jiangmiao/auto-pairs'
+Plug 'jiangmiao/auto-pairs'
 " Plug 'gelguy/wilder.nvim'
 Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-obsession'
