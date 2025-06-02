@@ -330,9 +330,17 @@ let g:vimspector_install_gadgets = [
 nmap <leader>o :TagbarToggle<CR>
 let g:tagbar_show_linenumbers=2
 
+" Tagbar focus on result pane
+let g:tagbar_autofocus = 1
+
 " ctrlsf search
 " nnoremap <C-S-f> :CtrlSF 
 nnoremap <leader>x :CtrlSF 
+
+" ctrlsf focus on result pane
+let g:ctrlsf_auto_focus = {
+    \ "at": "start"
+    \ }
 
 " MarkdownPreview Config
 
@@ -386,6 +394,9 @@ nnoremap <leader>n <plug>NERDTreeTabsToggle<CR>
 
 " undotree
 nnoremap <leader>u :UndotreeToggle<CR>
+
+" undotree focus on result pane
+let g:undotree_SetFocusWhenToggle = 1
 
 " suda smart edit
 let g:suda_smart_edit = 1
