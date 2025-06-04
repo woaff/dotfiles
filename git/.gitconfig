@@ -1,5 +1,4 @@
-[user]
-	name = woaff
-	email = 447385206@qq.com
 [init]
 	defaultBranch = main
+[include]
+	path = ~/.gitconfig_local
