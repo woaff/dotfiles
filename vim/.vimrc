@@ -474,7 +474,7 @@ Plug 'honza/vim-snippets'
 Plug 'majutsushi/tagbar'
 " Plug 'preservim/vim-markdown'
 " Plug 'wookayin/vim-typora'
-Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npx --yes yarn install' }
 " Plug 'instant-markdown/vim-instant-markdown', {'for': 'markdown', 'do': 'yarn install'}
 Plug 'dhruvasagar/vim-table-mode'
 Plug 'img-paste-devs/img-paste.vim'
