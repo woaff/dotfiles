@@ -348,11 +348,11 @@ let g:ctrlsf_auto_focus = {
 " when leaving insert mode. Default 0 is auto-refresh Markdown as you edit or
 " move the cursor
 " default: 0
-let g:mkdp_refresh_slow = 0
+let g:mkdp_refresh_slow = 1
 
 " use a custom Markdown style. Must be an absolute path
 " like '/Users/username/markdown.css' or expand('~/markdown.css')
-" let g:mkdp_markdown_css = '/home/woff/.local/github-markdown-css/github-markdown.css'
+" let g:mkdp_markdown_css = '$HOME/.local/lib/github-markdown-css/github-markdown.css'
 
 " table mode markdown
 nmap <leader>tm :TableModeToggle<CR>
@@ -474,7 +474,7 @@ Plug 'honza/vim-snippets'
 Plug 'majutsushi/tagbar'
 " Plug 'preservim/vim-markdown'
 " Plug 'wookayin/vim-typora'
-Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npx --yes yarn install' }
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
 " Plug 'instant-markdown/vim-instant-markdown', {'for': 'markdown', 'do': 'yarn install'}
 Plug 'dhruvasagar/vim-table-mode'
 Plug 'img-paste-devs/img-paste.vim'
