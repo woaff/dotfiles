@@ -326,6 +326,9 @@ let g:vimspector_install_gadgets = [
 " wilder
 " call wilder#setup({'modes': [':', '/', '?']})
 
+" Ultisnips
+let g:UltiSnipsSnippetDirectories = ['Ultisnips', '$HOME/.vim/Ultisnips/']
+
 " Tagbar Outline
 nmap <leader>o :TagbarToggle<CR>
 let g:tagbar_show_linenumbers=2
