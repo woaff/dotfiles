@@ -447,8 +447,8 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-obsession'
 Plug 'tpope/vim-fugitive'
-Plug 'junegunn/gv.vim'
 Plug 'tpope/vim-rhubarb'
+Plug 'junegunn/gv.vim'
 Plug 'gisphm/vim-gitignore'
 Plug 'nfischer/vim-vimignore'
 Plug 'airblade/vim-gitgutter'
@@ -512,6 +512,7 @@ Plug 'camspiers/lens.vim'
 " Plug 'mattn/vim-lsp-settings'
 " Plug 'prabirshrestha/asyncomplete.vim'
 " Plug 'prabirshrestha/asyncomplete-lsp.vim'
+Plug 'tommcdo/vim-exchange'
 call plug#end()
 
 " Use gruvbox theme
