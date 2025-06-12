@@ -8,8 +8,8 @@ set number
 set t_vb=
 " set expandtab
 set tabstop=4
-set shiftwidth=4
 set softtabstop=4
+set shiftwidth=4
 set smartindent
 set hlsearch
 set incsearch
@@ -513,6 +513,7 @@ Plug 'camspiers/lens.vim'
 " Plug 'prabirshrestha/asyncomplete.vim'
 " Plug 'prabirshrestha/asyncomplete-lsp.vim'
 Plug 'tommcdo/vim-exchange'
+Plug 'github/copilot.vim'
 call plug#end()
 
 " Use gruvbox theme
