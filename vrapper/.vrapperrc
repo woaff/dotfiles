@@ -1,0 +1,93 @@
+" leader key
+let mapleader = '\'
+
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set hlsearch
+set incsearch
+set ignorecase
+set smartcase
+set textwidth=72
+set clipboard=unnamed
+set gvimpath="C:\Program Files\vim\vim90\gvim.exe"
+
+" Open Declaration (F3)
+eclipseaction eclipsegotodef org.eclipse.jdt.ui.edit.text.java.open.editor
+nnoremap gd :eclipsegotodef<CR>
+
+" Navigates to implementation (F3)
+eclipseaction eclipsegotoimpl org.eclipse.jdt.ui.edit.text.java.open.implementation
+nnoremap gD :eclipsegotoimpl<CR>
+
+" References in Workspace (Ctrl+Shift+G)
+eclipseaction eclipsefindref org.eclipse.jdt.ui.edit.text.java.search.references.in.workspace
+nnoremap gr :eclipsefindref<CR>
+
+" Format (Ctrl+Shift+F)
+" eclipseaction eclipseformat org.eclipse.jdt.ui.edit.text.java.format
+" nnoremap <leader>f :eclipseformat<CR>
+
+" Rename (Alt+Shift+R)
+" eclipseaction eclipserename org.eclipse.jdt.ui.edit.text.java.rename.element
+" nnoremap crn :eclipserename<CR>
+
+" Show Tooltip Description (F2)
+" eclipseaction eclipseshowinfo org.eclipse.ui.edit.text.showInformation
+" nnoremap <leader>i :eclipseshowinfo<CR>
+
+" Find and Replace (Ctrl+F)
+eclipseaction eclipsefindreplace org.eclipse.ui.edit.findReplace
+nnoremap <leader>f :eclipsefindreplace<CR>
+
+" Go to Next Member (Ctrl+Shift+Down)
+eclipseaction eclipsenextmember org.eclipse.jdt.ui.edit.text.java.goto.next.member
+nnoremap ]] :eclipsenextmember<CR>
+
+" Go to Previous Member (Ctrl+Shift+Up)
+eclipseaction eclipseprevmember org.eclipse.jdt.ui.edit.text.java.goto.previous.member
+nnoremap [[ :eclipseprevmember<CR>
+
+" Next Item (Ctrl+.)
+" eclipseaction eclipsenextitem org.eclipse.ui.navigate.next
+" nnoremap ]q :eclipsenextitem<CR><Esc>
+noremap ]q <Plug>(eclipse-motion:org.eclipse.ui.navigate.next)
+
+" Previous Item (Ctrl+,)
+" eclipseaction eclipsepreviousitem org.eclipse.ui.navigate.previous
+" nnoremap [q :eclipsepreviousitem<CR><Esc>
+noremap [q <Plug>(eclipse-motion:org.eclipse.ui.navigate.previous)
+
+" Toggle Breakpoint (Ctrl+Shift+B)
+" eclipseaction eclipsetogglebp org.eclipse.debug.ui.commands.ToggleBreakpoint
+" nnoremap <leader>b :eclipsetogglebp<CR>
+noremap <leader>b <Plug>(eclipse-motion:org.eclipse.debug.ui.commands.ToggleBreakpoint)
+
+" Removes All Breakpoints (Alt+R V)
+" eclipseaction eclipsermallbp org.eclipse.debug.ui.commands.RemoveAllBreakpoints
+" nnoremap <leader>b :eclipsermallbp<CR>
+
+" open file manager (requires Eclipse 4.4/Luna)
+eclipseaction eclipseopenfm org.eclipse.ui.ide.showInSystemExplorer
+nnoremap gof :eclipseopenfm<CR>
+
+" :a activates the current ABAP object (Ctrl+F3)
+eclipseuiaction a com.sap.adt.activation.ui.command.singleActivation
+
+" :c check ABAP development object (Ctrl+F2)
+eclipseuiaction c com.sap.adt.activation.ui.command.check
+
+" :e executes the ABAP object (e.g., programs, classes) (Alt+F8)
+eclipseuiaction e com.sap.adt.sapgui.ui.launchExecutableObject
+
+" :o opens the ABAP search dialog (Ctrl+Shift+A)
+eclipseuiaction o com.sap.adt.ris.search.ui.callSimpleSearch
+
+" gd jumps to the definition or matching block (F3)
+noremap gd <Plug>(eclipse-motion:com.sap.adt.tools.abapsource.ui.navigateTo)
+
+" gr get where used list for an ABAP development object (Ctrl+Shift+G)
+noremap gr <Plug>(eclipse-motion:com.sap.adt.ris.whereused.ui.callWhereUsed)
+
+" <leader>rn rename (Alt+Shift+R)
+noremap <leader>rn <Plug>(eclipse-motion:com.sap.adt.tools.core.ui.rename)
