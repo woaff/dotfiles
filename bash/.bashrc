@@ -28,6 +28,10 @@ eval "$(fzf --bash)"
 export MANPAGER="vim -M +MANPAGER -"
 export HOSTS=/mnt/c/Windows/System32/drivers/etc/hosts
 
+# Enable TAB completion using fzf
+source ~/fzf-tab-completion/bash/fzf-bash-completion.sh
+bind -x '"\t": fzf_bash_completion'
+
 export HTTP_PORT=10810
 export SOCKS_PORT=10811
 export HOSTIP=$(awk '/nameserver/ {print $2}' /etc/resolv.conf)
