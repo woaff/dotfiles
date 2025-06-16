@@ -1,6 +1,7 @@
 {
   "coc.preferences.formatOnSave": true,
   "prettier.disableLanguages": ["markdown"],
+  "suggest.autoTrigger": "trigger",
   "inlayHint.enable": false,
   "signature.enable": false,
   "explorer.width": 30,
