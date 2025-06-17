@@ -391,7 +391,7 @@ augroup END
 " there are some defaults for image directory and image name, you can change them
 let g:mdip_imgdir = './' . expand('%:t:r') . '.assets'
 let g:mdip_imgname = 'image'
-let g:mdip_tmpname = g:mdip_imgname . '-' .  strftime("%Y%m%d%H%M%S")
+let g:mdip_tmpname = g:mdip_imgname . '-' .  strftime("%Y%m%d%H%M%S") . reltimestr(reltime())[5:7]
 
 " nerdtree tabs
 nnoremap <leader>n <plug>NERDTreeTabsToggle<CR>
