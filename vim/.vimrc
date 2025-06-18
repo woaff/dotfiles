@@ -329,6 +329,10 @@ let g:vimspector_install_gadgets = [
 " Ultisnips
 let g:UltiSnipsSnippetDirectories = ['Ultisnips', '$HOME/.vim/Ultisnips/']
 
+" Trigger configuration
+let g:UltiSnipsJumpForwardTrigger="<A-f>"
+let g:UltiSnipsJumpBackwardTrigger="<A-b>"
+
 " Tagbar Outline
 nmap <leader>o :TagbarToggle<CR>
 let g:tagbar_show_linenumbers=2
