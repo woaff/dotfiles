@@ -397,11 +397,13 @@ let g:mdip_imgdir = './' . expand('%:t:r') . '.assets'
 let g:mdip_imgname = 'image'
 let g:mdip_tmpname = g:mdip_imgname . '-' .  strftime("%Y%m%d%H%M%S") . reltimestr(reltime())[5:7]
 
-" nerdtree line number
+" NERDTree
+" Enable line number
 let g:NERDTreeShowLineNumbers=1
 
-" nerdtree tabs
-nnoremap <leader>n <plug>NERDTreeTabsToggle<CR>
+" NERDTree Tabs
+" map file toggle
+nnoremap <silent> <expr> <leader>n g:NERDTree.IsOpen() ? "\:NERDTreeClose<CR>" : bufexists(expand('%')) ? "\:NERDTreeFind<CR>" : "\:NERDTreeToggle<CR>"
 
 " undotree
 nnoremap <leader>u :UndotreeToggle<CR>
