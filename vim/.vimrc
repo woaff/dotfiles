@@ -399,7 +399,17 @@ let g:mdip_tmpname = g:mdip_imgname . '-' .  strftime("%Y%m%d%H%M%S") . reltimes
 
 " NERDTree
 " Enable line number
-let g:NERDTreeShowLineNumbers=1
+let g:NERDTreeShowLineNumbers = 1
+
+" Show hidden file
+let g:NERDTreeShowHidden = 1
+
+" Disable bookmark and help
+let g:NERDTreeMinimalUI = 1
+
+" NERDTree Git
+" Enable Nerd Fonts
+let g:NERDTreeGitStatusUseNerdFonts = 1
 
 " NERDTree Tabs
 " map file toggle
