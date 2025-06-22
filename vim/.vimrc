@@ -415,6 +415,9 @@ let g:NERDTreeGitStatusUseNerdFonts = 1
 " map file toggle
 nnoremap <silent> <expr> <leader>n g:NERDTree.IsOpen() ? "\:NERDTreeClose<CR>" : bufexists(expand('%')) ? "\:NERDTreeFind<CR>" : "\:NERDTreeToggle<CR>"
 
+" when all buffer close NERDTree close automatically
+autocmd BufEnter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
 " undotree
 nnoremap <leader>u :UndotreeToggle<CR>
 
