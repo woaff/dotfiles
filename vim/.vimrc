@@ -411,6 +411,20 @@ let g:NERDTreeMinimalUI = 1
 " Enable Nerd Fonts
 let g:NERDTreeGitStatusUseNerdFonts = 1
 
+" Git Status Custom Symbol
+let g:NERDTreeGitStatusIndicatorMapCustom = {
+                \ 'Untracked' :'*',
+                \ 'Modified'  :'~',
+                \ 'Staged'    :'+',
+                \ 'Renamed'   :'»',
+                \ 'Unmerged'  :'≠',
+                \ 'Deleted'   :'-',
+                \ 'Dirty'     :'×',
+                \ 'Clean'     :'√',
+                \ 'Ignored'   :'☒',
+                \ 'Unknown'   :'?',
+                \ }
+
 " NERDTree Tabs
 " map file toggle
 nnoremap <silent> <expr> <leader>n g:NERDTree.IsOpen() ? "\:NERDTreeClose<CR>" : bufexists(expand('%')) ? "\:NERDTreeFind<CR>" : "\:NERDTreeToggle<CR>"
