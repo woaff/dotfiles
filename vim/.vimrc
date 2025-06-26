@@ -268,6 +268,10 @@ augroup JsonToJsonc
     autocmd FileType json set filetype=jsonc
 augroup END
 
+" auto-pairs
+" Disable backspace delete pairs
+let g:AutoPairsMapBS = 0
+
 " airline
 " Enable the list of buffers
 let g:airline#extensions#tabline#enabled = 1
