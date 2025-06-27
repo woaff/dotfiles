@@ -252,7 +252,7 @@ endif
 " coc explorer
 nmap <leader>e :CocCommand explorer<CR>
 " when all buffer close coc-explorer close automatically
-augroup Explorer
+augroup ExplorerAutoClose
 	autocmd!
 	autocmd BufEnter * if (winnr("$") == 1 && &filetype == 'coc-explorer') | q | endif
 augroup END
@@ -457,7 +457,7 @@ let g:vrc_output_buffer_name = '__REST_response.json'
 let g:vrc_auto_format_response_patterns = { 'json':'jq' }
 
 " fzf
-nnoremap <leader>z :FZF<CR>
+nnoremap <leader>z :Files<CR>
 nnoremap <leader>h :History<CR>
 
 " singele complete
