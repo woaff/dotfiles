@@ -257,6 +257,11 @@ augroup ExplorerAutoClose
 	autocmd BufEnter * if (winnr("$") == 1 && &filetype == 'coc-explorer') | q | endif
 augroup END
 
+augroup ExplorerRelativeNumber
+    autocmd!
+    autocmd FileType coc-explorer setlocal relativenumber
+augroup END
+
 " commentary
 nmap <C-_> <Esc><Plug>CommentaryLine
 imap <C-_> <Esc><Plug>CommentaryLine
@@ -339,7 +344,9 @@ let g:UltiSnipsJumpBackwardTrigger="<A-b>"
 
 " Tagbar Outline
 nmap <leader>o :TagbarToggle<CR>
-let g:tagbar_show_linenumbers=2
+
+" Show relative line numbers
+let g:tagbar_show_linenumbers = 2
 
 " Tagbar focus on result pane
 let g:tagbar_autofocus = 1
