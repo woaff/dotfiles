@@ -28,6 +28,9 @@ eval "$(fzf --bash)"
 export MANPAGER="vim -M +MANPAGER -"
 export HOSTS=/mnt/c/Windows/System32/drivers/etc/hosts
 
+# fzf preview
+export FZF_DEFAULT_OPTS='--preview "[[ $(file --mime {}) =~ binary ]] && echo {} is a binary file || cat {} 2>/dev/null | head -500"'
+
 # Enable TAB completion using fzf
 source ~/fzf-tab-completion/bash/fzf-bash-completion.sh
 bind -x '"\t": fzf_bash_completion'
