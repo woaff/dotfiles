@@ -474,6 +474,8 @@ nnoremap <leader><F5> :SCCompileRun<cr>
 " indent line
 " json display double quotes
 let g:vim_json_conceal = 0
+" markdown display double star
+let g:markdown_syntax_conceal = 0
 let g:indentLine_fileTypeExclude = ['help', 'diff', 'man', 'nerdtree', 'undotree', 'coc-explorer']
 let g:indentLine_bufTypeExclude = ['help', 'terminal']
 
