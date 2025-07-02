@@ -392,7 +392,8 @@ inoreabbrev <expr> __
           \ '<c-o>:silent! TableModeDisable<cr>' : '__'
 
 " vim-markdown
-let g:vim_markdown_folding_disabled=1
+" Disable folding
+let g:vim_markdown_folding_disabled = 1
 
 " vimwiki
 let g:vimwiki_list = [{'path': '~/vimwiki/',
@@ -526,7 +527,7 @@ Plug 'honza/vim-snippets'
 " Plug 'kuniwak/vint'
 " Plug 'itspriddle/vim-shellcheck'
 Plug 'majutsushi/tagbar'
-" Plug 'preservim/vim-markdown'
+Plug 'preservim/vim-markdown'
 " Plug 'wookayin/vim-typora'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
 " Plug 'instant-markdown/vim-instant-markdown', {'for': 'markdown', 'do': 'yarn install'}
