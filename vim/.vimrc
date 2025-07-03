@@ -395,6 +395,12 @@ inoreabbrev <expr> __
 " Disable folding
 let g:vim_markdown_folding_disabled = 1
 
+" Disable conceal in markdown
+let g:vim_markdown_conceal = 0
+
+" Disable conceal for code block
+let g:vim_markdown_conceal_code_blocks = 0
+
 " vimwiki
 let g:vimwiki_list = [{'path': '~/vimwiki/',
 		                      \ 'syntax': 'markdown', 'ext': 'md'}]
