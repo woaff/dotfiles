@@ -353,7 +353,7 @@ let g:tagbar_autofocus = 1
 
 " ctrlsf search
 " nnoremap <C-S-f> :CtrlSF 
-nnoremap <leader>x :CtrlSF 
+nnoremap <leader>x <Plug>CtrlSFPrompt
 
 " ctrlsf focus on result pane
 let g:ctrlsf_auto_focus = {
