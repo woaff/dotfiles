@@ -153,6 +153,7 @@ let g:coc_global_extensions = [
 		\ 'coc-markdownlint',
 		\ 'coc-pyright',
 		\ 'coc-sql',
+		\ 'coc-dictionary',
 		\ ]
 
 " coc suggestion box change color
