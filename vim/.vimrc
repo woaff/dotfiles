@@ -64,7 +64,7 @@ nnoremap <CR> :noh<CR><CR>
 cnoremap <F31> <C-F>ea<C-W><C-C>
 execute "set <F31>=\<Esc>d"
 
-augroup Complete
+augroup Compile
 	autocmd!
 	autocmd FileType xml map <leader><F2> <Esc>:%!xmllint --format -<CR>
 	autocmd FileType python map <leader><F3> :exec '!python3' shellescape(@%, 1)<CR>
@@ -475,7 +475,7 @@ let g:vrc_auto_format_response_patterns = { 'json':'jq' }
 nnoremap <leader>z :Files<CR>
 nnoremap <leader>h :History<CR>
 
-" singele complete
+" singele compile
 nnoremap <leader><F4> :SCCompile -g<CR>
 nnoremap <leader><F5> :SCCompileRun<cr>
 
