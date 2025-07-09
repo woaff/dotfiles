@@ -31,6 +31,8 @@ set fileencodings=utf-8,cp936
 set nofoldenable
 set termwinsize=8*0
 set colorcolumn=80
+set complete+=k
+set dictionary+=~/.vim/dict/language.txt
 syntax enable
 filetype plugin indent on
 
