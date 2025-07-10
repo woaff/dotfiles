@@ -515,7 +515,7 @@ Plug 'vim-scripts/RltvNmbr.vim'
 " Plug 'myusuf3/numbers.vim'
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
-Plug 'yuki-yano/fzf-preview.vim'
+Plug 'yuki-yano/fzf-preview.vim', { 'branch': 'release/rpc' }
 Plug 'kien/ctrlp.vim'
 Plug 'dyng/ctrlsf.vim'
 Plug 'google/vim-searchindex'
