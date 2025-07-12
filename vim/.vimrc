@@ -478,6 +478,20 @@ let g:vrc_auto_format_response_patterns = { 'json':'jq' }
 nnoremap <leader>z :Files<CR>
 nnoremap <leader>h :History<CR>
 
+" fzf-preview
+
+" fzf window position settings
+let g:fzf_preview_direct_window_option = { 'width': 0.9, 'height': 0.6 }
+
+" fzf command default options
+let g:fzf_preview_default_fzf_options = { '--preview-window': 'wrap' }
+
+" Commands used for preview of the grep result
+let g:fzf_preview_grep_preview_cmd = '$HOME/.config/coc/extensions/node_modules/coc-fzf-preview/bin/preview_fzf_grep'
+
+" Use as fzf preview-window option
+let g:fzf_preview_fzf_preview_window_option = 'right:50%'
+
 " singele compile
 nnoremap <leader><F4> :SCCompile -g<CR>
 nnoremap <leader><F5> :SCCompileRun<cr>
