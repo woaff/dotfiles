@@ -477,6 +477,7 @@ let g:vrc_auto_format_response_patterns = { 'json':'jq' }
 " fzf
 nnoremap <leader>z :Files<CR>
 nnoremap <leader>h :History<CR>
+nnoremap <leader>r :RG<CR>
 
 " fzf-preview
 
