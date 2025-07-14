@@ -481,6 +481,17 @@ nnoremap <leader>r :RG<CR>
 
 " fzf-preview
 
+" key mapping
+nnoremap <leader>zp :FzfPreviewFromResourcesRpc project_mru git<CR>
+nnoremap <leader>za :FzfPreviewGitActionsRpc<CR>
+nnoremap <leader>zs :FzfPreviewGitStatusRpc<CR>
+nnoremap <leader>zl :FzfPreviewGitLogsRpc<CR>
+nnoremap <leader>zh :FzfPreviewMrwFilesRpc<CR>
+nnoremap <leader>zb :FzfPreviewAllBuffersRpc<CR>
+nnoremap <leader>z/ :FzfPreviewLinesRpc<CR>
+nnoremap <leader>zt :FzfPreviewBufferTagsRpc<CR>
+nnoremap <leader>zd <Cmd>CocCommand fzf-preview.CocDiagnostics<CR>
+
 " fzf window position settings
 let g:fzf_preview_direct_window_option = { 'width': 0.9, 'height': 0.6 }
 
