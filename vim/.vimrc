@@ -603,6 +603,7 @@ Plug 'camspiers/lens.vim'
 " Plug 'prabirshrestha/asyncomplete-lsp.vim'
 Plug 'tommcdo/vim-exchange'
 Plug 'github/copilot.vim'
+Plug 'chriszarate/yazi.vim'
 call plug#end()
 
 " Use gruvbox theme
