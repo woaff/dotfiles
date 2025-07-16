@@ -519,6 +519,9 @@ let g:indentLine_bufTypeExclude = ['help', 'terminal']
 " lens
 let g:lens#disabled_filetypes = ['tagbar', 'nerdtree']
 
+" yazi
+nnoremap <leader>y :Yazi<CR>
+
 call plug#begin()
 Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-surround'
