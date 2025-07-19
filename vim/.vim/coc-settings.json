@@ -13,6 +13,13 @@
         "<CR>": ["expandable?", "expand", "open"],
         "v": "open:vsplit"
     },
+    "toml.formatter.alignEntries": true,
+    "toml.formatter.arrayAutoExpand": false,
+    "toml.formatter.arrayAutoCollapse": false,
+    "toml.formatter.compactArrays": false,
+    "toml.formatter.compactInlineTables": false,
+    "toml.formatter.indentTables": true,
+    "toml.formatter.indentString": "\t",
     "xml.java.home": "/usr/lib/jvm/java-17-openjdk-17.0.14.0.7-6.fc41",
     "clangd.path": "~/.config/coc/extensions/coc-clangd-data/install/19.1.2/clangd_19.1.2/bin/clangd",
     "clangd.arguments": ["--function-arg-placeholders=0"],
