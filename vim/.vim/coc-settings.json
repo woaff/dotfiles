@@ -2,7 +2,6 @@
     "coc.preferences.formatOnSave": true,
     "prettier.disableLanguages": ["markdown"],
     "prettier.tabWidth": 4,
-    "eslint.autoFixOnSave": true,
     "suggest.autoTrigger": "trigger",
     "inlayHint.enable": false,
     "signature.enable": false,
