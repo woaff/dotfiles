@@ -96,10 +96,10 @@ nnoremap <leader>d "_d
 xnoremap <leader>d "_d
 
 " open terminal
-nnoremap <leader>c :wincmd b \| bel terminal<CR>
+nnoremap <leader>c :wincmd b \| bel terminal ++close<CR>
 
 " close terminal
-tnoremap <Esc> <C-W>:q!<CR>
+" tnoremap <Esc> <C-W>:q!<CR>
 
 " select fenced code block
 function! SelectFencedCodeBlock()
