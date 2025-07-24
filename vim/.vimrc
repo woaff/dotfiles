@@ -129,6 +129,12 @@ let g:netrw_browsex_viewer='cmd.exe /C start'
     " augroup END
 " endif
 
+" Toggle coc start up
+let g:coc_start_at_startup = 1
+
+" Check status coc start up
+if get(g:, 'coc_start_at_startup')
+
 " coc extensions list
 let g:coc_global_extensions = [
 		\ 'coc-marketplace',
@@ -265,6 +271,8 @@ augroup ExplorerRelativeNumber
     autocmd!
     autocmd FileType coc-explorer setlocal relativenumber
 augroup END
+
+endif
 
 " commentary
 nmap <C-_> <Esc><Plug>CommentaryLine
