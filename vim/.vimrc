@@ -45,9 +45,9 @@ let &t_EI = "\e[2 q"
 
 augroup RltvNmbr
 	autocmd!
-	autocmd VimEnter * RltvNmbr
-	autocmd BufEnter * RltvNmbr
-	autocmd VimEnter * set number
+	autocmd VimEnter * silent RltvNmbr
+	autocmd BufEnter * silent RltvNmbr
+	autocmd VimEnter * silent setlocal number
 augroup END
 
 augroup FormatOptions
