@@ -354,6 +354,9 @@ let g:UltiSnipsSnippetDirectories = ['Ultisnips', '$HOME/.vim/Ultisnips/']
 let g:UltiSnipsJumpForwardTrigger="<A-f>"
 let g:UltiSnipsJumpBackwardTrigger="<A-b>"
 
+" If you want :UltiSnipsEdit to split your window.
+let g:UltiSnipsEditSplit="vertical"
+
 " Tagbar Outline
 nmap <leader>o :TagbarToggle<CR>
 
