@@ -558,6 +558,7 @@ Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'airblade/vim-rooter'
 Plug 'yuki-yano/fzf-preview.vim', { 'branch': 'release/rpc' }
+Plug 'stsewd/fzf-checkout.vim'
 Plug 'kien/ctrlp.vim'
 Plug 'dyng/ctrlsf.vim'
 Plug 'google/vim-searchindex'
