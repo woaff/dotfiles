@@ -348,7 +348,7 @@ let g:vimspector_install_gadgets = [
 " call wilder#setup({'modes': [':', '/', '?']})
 
 " Ultisnips
-let g:UltiSnipsSnippetDirectories = ['Ultisnips', '$HOME/.vim/Ultisnips/']
+let g:UltiSnipsSnippetDirectories = ['UltiSnips', '$HOME/.vim/UltiSnips/', '$HOME/.vim/plugged/vim-snippets/UltiSnips/']
 
 " Trigger configuration
 let g:UltiSnipsJumpForwardTrigger="<A-f>"
