@@ -533,6 +533,11 @@ let g:lens#disabled_filetypes = ['tagbar', 'nerdtree']
 " yazi
 nnoremap <leader>y :Yazi<CR>
 
+" lsp
+
+" Toggle vim lsp start up
+let g:lsp_auto_enable = 0
+
 call plug#begin()
 Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-surround'
