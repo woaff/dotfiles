@@ -565,6 +565,9 @@ augroup lsp_install
     au!
     " call s:on_lsp_buffer_enabled only for languages that has the server registered.
     autocmd User lsp_buffer_enabled call s:on_lsp_buffer_enabled()
+
+	" Disable diagnostics sign
+	let g:lsp_diagnostics_signs_enabled = 0
 augroup END
 
 call plug#begin()
