@@ -571,6 +571,9 @@ augroup lsp_install
 
 	" Disable diagnostics virtual text
 	let g:lsp_diagnostics_virtual_text_enabled = 0
+
+	" Disable code action sign
+	let g:lsp_document_code_action_signs_enabled = 0
 augroup END
 
 call plug#begin()
