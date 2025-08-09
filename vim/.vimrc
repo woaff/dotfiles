@@ -262,7 +262,7 @@ endif
 " coc explorer
 nmap <leader>e :CocCommand explorer<CR>
 " when all buffer close coc-explorer close automatically
-augroup ExplorerAutoClose
+augroup AutoCloseExplorer
 	autocmd!
 	autocmd BufEnter * if (winnr("$") == 1 && &filetype == 'coc-explorer') | q | endif
 augroup END
@@ -463,7 +463,10 @@ let g:NERDTreeGitStatusIndicatorMapCustom = {
 nnoremap <silent> <expr> <leader>n g:NERDTree.IsOpen() ? "\:NERDTreeClose<CR>" : bufexists(expand('%')) ? "\:NERDTreeFind<CR>" : "\:NERDTreeToggle<CR>"
 
 " when all buffer close NERDTree close automatically
-autocmd BufEnter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+augroup AutoCloseNERDTree
+    autocmd!
+    autocmd BufEnter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+augroup END
 
 " undotree
 nnoremap <leader>u :UndotreeToggle<CR>
@@ -517,7 +520,7 @@ let g:fzf_preview_fzf_preview_window_option = 'right:50%'
 
 " singele compile
 nnoremap <leader><F4> :SCCompile -g<CR>
-nnoremap <leader><F5> :SCCompileRun<cr>
+nnoremap <leader><F5> :SCCompileRun<CR>
 
 " indent line
 " json display double quotes
