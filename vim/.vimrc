@@ -351,6 +351,7 @@ let g:vimspector_install_gadgets = [
 let g:UltiSnipsSnippetDirectories = ['UltiSnips', '$HOME/.vim/UltiSnips/', '$HOME/.vim/plugged/vim-snippets/UltiSnips/']
 
 " Trigger configuration
+let g:UltiSnipsExpandTrigger="<TAB>"
 let g:UltiSnipsJumpForwardTrigger="<A-f>"
 let g:UltiSnipsJumpBackwardTrigger="<A-b>"
 
