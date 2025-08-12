@@ -574,6 +574,14 @@ function! s:on_lsp_buffer_enabled() abort
 	  \ asyncomplete#force_refresh()
 	inoremap <expr> <S-TAB> pumvisible() ? "\<C-p>" : "\<S-TAB>"
 	inoremap <expr> <CR>    pumvisible() ? asyncomplete#close_popup() : "\<CR>"
+
+	" force refresh completion
+	if has('nvim')
+	  imap <c-space> <Plug>(asyncomplete_force_refresh)
+	else
+	  execute "set <A-/>=\e/"
+	  imap <A-/> <Plug>(asyncomplete_force_refresh)
+	endif
 endfunction
 
 augroup lsp_install
