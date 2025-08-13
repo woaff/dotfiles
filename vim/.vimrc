@@ -584,10 +584,16 @@ function! s:on_lsp_buffer_enabled() abort
 	endif
 endfunction
 
+function! s:asyncomplete_register_source() abort
+endfunction
+
 augroup lsp_install
     au!
     " call s:on_lsp_buffer_enabled only for languages that has the server registered.
     autocmd User lsp_buffer_enabled call s:on_lsp_buffer_enabled()
+	
+	" call s:asyncomplete_register_source() for asyncomplete register
+	autocmd User asyncomplete_setup call s:asyncomplete_register_source()
 
 	" Disable diagnostics sign
 	let g:lsp_diagnostics_signs_enabled = 0
