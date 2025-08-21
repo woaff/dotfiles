@@ -606,6 +606,12 @@ function! s:asyncomplete_register_source() abort
 		\ 'allowlist': ['*'],
 		\ 'completor': function('asyncomplete#sources#ultisnips#completor'),
 		\ }))
+
+	call asyncomplete#register_source({
+		\ 'name': 'dictionary',
+		\ 'allowlist': ['*'],
+		\ 'completor': function('asyncomplete#sources#dictionary#completor'),
+		\ })
 endfunction
 
 augroup lsp_install
