@@ -630,6 +630,9 @@ augroup lsp_install
 
 	" Disable code action sign
 	let g:lsp_document_code_action_signs_enabled = 0
+
+	" Disable asyncomplete auto popup menu
+	let g:asyncomplete_auto_popup = 0
 augroup END
 
 call plug#begin()
