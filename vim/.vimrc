@@ -582,6 +582,8 @@ function! s:on_lsp_buffer_enabled() abort
 	  execute "set <A-/>=\e/"
 	  imap <A-/> <Plug>(asyncomplete_force_refresh)
 	endif
+
+	nnoremap <leader>zd :FzfPreviewVimLspDiagnosticsRpc<CR>
 endfunction
 
 function! s:asyncomplete_register_source() abort
