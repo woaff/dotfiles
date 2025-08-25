@@ -624,6 +624,9 @@ augroup lsp_install
 	" call s:asyncomplete_register_source() for asyncomplete register
 	autocmd User asyncomplete_setup call s:asyncomplete_register_source()
 
+	" Enable diagnostics float window
+	let g:lsp_diagnostics_float_cursor = 1
+
 	" Disable diagnostics sign
 	let g:lsp_diagnostics_signs_enabled = 0
 
