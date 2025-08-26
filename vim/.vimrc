@@ -708,6 +708,7 @@ Plug 'andymass/vim-matchup'
 Plug 'mg979/vim-visual-multi'
 Plug 'osyo-manga/vim-over'
 Plug 'mattn/emmet-vim'
+Plug 'wolandark/vim-live-server'
 " Plug 'shougo/vimshell.vim'
 " Plug 'Shougo/vimproc.vim', {'do' : 'make'}
 Plug 'christoomey/vim-tmux-navigator'
