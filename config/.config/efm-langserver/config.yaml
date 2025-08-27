@@ -1,0 +1,82 @@
+version: 2
+
+tools:
+    json-jsonlint: &json-jsonlint
+        lint-command: 'jsonlint -c'
+        lint-stdin: true
+
+    json-jq: &json-jq
+        format-command: 'jq .'
+        format-stdin: true
+
+    markdown-markdownlint: &markdown-markdownlint
+        lint-command: 'markdownlint -s -c $HOME/.markdownlintrc'
+        lint-stdin: true
+        lint-formats:
+            - '%f:%l %m'
+            - '%f:%l:%c %m'
+            - '%f: %l: %m'
+
+    prettier: &prettier
+        format-command: 'prettier --stdin ${INPUT}'
+        format-stdin: true
+
+    python-autopep8: &python-autopep8
+        format-command: 'autopep8 -'
+        format-stdin: true
+
+    sh-shellcheck: &sh-shellcheck
+        lint-command: 'shellcheck -f gcc -x'
+        lint-source: 'shellcheck'
+        lint-formats:
+            - '%f:%l:%c: %trror: %m'
+            - '%f:%l:%c: %tarning: %m'
+            - '%f:%l:%c: %tote: %m'
+
+    sh-shfmt: &sh-shfmt
+        format-command: 'shfmt -ci -s -bn'
+        format-stdin: true
+
+    vim-vint: &vim-vint
+        lint-command: 'vint -'
+        lint-stdin: true
+        lint-formats:
+            - '%f:%l:%c: %m'
+
+    yaml-yamllint: &yaml-yamllint
+        lint-command: 'yamllint -f parsable -'
+        lint-stdin: true
+
+languages:
+    css:
+        - <<: *prettier
+
+    html:
+        - <<: *prettier
+
+    javascript:
+        - <<: *prettier
+
+    json:
+        - <<: *json-jsonlint
+        - <<: *json-jq
+
+    jsonc:
+        - <<: *json-jsonlint
+        - <<: *json-jq
+
+    markdown:
+        - <<: *markdown-markdownlint
+
+    python:
+        - <<: *python-autopep8
+
+    sh:
+        - <<: *sh-shellcheck
+        - <<: *sh-shfmt
+
+    vim:
+        - <<: *vim-vint
+
+    yaml:
+        - <<: *yaml-yamllint
