@@ -54,6 +54,25 @@
                 }
             },
             "filetypes": ["vim"]
+        },
+        "efm": {
+            "command": "efm-langserver",
+            "args": [],
+            "filetypes": [
+                "css",
+                "html",
+                "javascript",
+                "json",
+                "jsonc",
+                "markdown",
+                "python",
+                "sh",
+                "vim",
+                "yaml"
+            ],
+            "initializationOptions": {
+                "documentFormatting": true
+            }
         }
     },
     "diagnostic-languageserver.filetypes": {
