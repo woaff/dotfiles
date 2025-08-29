@@ -542,6 +542,12 @@ nnoremap <leader>y :Yazi<CR>
 " Toggle vim lsp start up
 let g:lsp_auto_enable = 0
 
+let g:lsp_settings = {
+\  'efm-langserver': {
+\    'disabled': v:false,
+\  }
+\}
+
 function! s:on_lsp_buffer_enabled() abort
     setlocal omnifunc=lsp#complete
     setlocal signcolumn=yes
