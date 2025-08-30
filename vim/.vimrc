@@ -548,6 +548,15 @@ let g:lsp_settings = {
 \  }
 \}
 
+augroup LspEFM
+  au!
+  autocmd User lsp_setup call lsp#register_server({
+      \ 'name': 'efm-langserver',
+      \ 'cmd': {server_info->['efm-langserver']},
+      \ 'allowlist': [ 'css', 'html', 'javascript', 'json', 'jsonc', 'markdown', 'python', 'sh', 'vim', 'yaml' ],
+      \ })
+augroup END
+
 function! s:on_lsp_buffer_enabled() abort
     setlocal omnifunc=lsp#complete
     setlocal signcolumn=yes
