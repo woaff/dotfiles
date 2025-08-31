@@ -750,6 +750,7 @@ Plug 'camspiers/lens.vim'
 Plug 'tommcdo/vim-exchange'
 Plug 'github/copilot.vim'
 Plug 'chriszarate/yazi.vim'
+Plug 'tsuyoshicho/vim-efm-langserver-settings'
 call plug#end()
 
 " Use gruvbox theme
