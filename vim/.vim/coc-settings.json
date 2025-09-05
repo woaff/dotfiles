@@ -67,6 +67,7 @@
                 "markdown",
                 "python",
                 "sh",
+                "toml",
                 "vim",
                 "yaml"
             ],
