@@ -542,6 +542,9 @@ nnoremap <leader>y :Yazi<CR>
 " Specify custom efm-langserver config file
 let g:efm_langserver_settings#config_file = '$HOME/.config/efm-langserver/config.yaml'
 
+" Enable using custom filetype settings
+let g:efm_langserver_settings#customlist = 1
+
 " lsp
 
 " Toggle vim lsp start up
