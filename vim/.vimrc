@@ -545,6 +545,20 @@ let g:efm_langserver_settings#config_file = '$HOME/.config/efm-langserver/config
 " Enable using custom filetype settings
 let g:efm_langserver_settings#customlist = 1
 
+let g:efm_langserver_settings#filetype_whitelist = [
+			\ 'css',
+            \ 'html',
+            \ 'javascript',
+            \ 'json',
+            \ 'jsonc',
+            \ 'markdown',
+            \ 'python',
+            \ 'sh',
+            \ 'toml',
+            \ 'vim',
+            \ 'yaml',
+			\ ]
+
 " lsp
 
 " Toggle vim lsp start up
