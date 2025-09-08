@@ -163,6 +163,7 @@ let g:coc_global_extensions = [
 		\ 'coc-sql',
 		\ 'coc-dictionary',
 		\ 'coc-fzf-preview',
+		\ 'coc-lua',
 		\ ]
 
 " coc suggestion box change color
