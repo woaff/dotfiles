@@ -462,7 +462,7 @@ let g:NERDTreeGitStatusIndicatorMapCustom = {
 
 " NERDTree Tabs
 " map file toggle
-nnoremap <silent> <expr> <leader>n g:NERDTree.IsOpen() ? "\:NERDTreeClose<CR>" : bufexists(expand('%')) ? "\:NERDTreeFind<CR>" : "\:NERDTreeToggle<CR>"
+nnoremap <silent> <expr> <leader>n exists("g:NERDTree") && g:NERDTree.IsOpen() ? "\:NERDTreeClose<CR>" : bufexists(expand('%')) ? "\:NERDTreeFind<CR>" : "\:NERDTreeToggle<CR>"
 
 " when all buffer close NERDTree close automatically
 augroup AutoCloseNERDTree
