@@ -541,7 +541,7 @@ nnoremap <leader>y :Yazi<CR>
 " efm langserver settings
 
 " Specify custom efm-langserver config file
-let g:efm_langserver_settings#config_file = '$HOME/.config/efm-langserver/config.yaml'
+let g:efm_langserver_settings#config_file = $HOME . '/.config/efm-langserver/config.yaml'
 
 " Enable using custom filetype settings
 let g:efm_langserver_settings#customlist = 1
