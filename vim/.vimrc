@@ -359,6 +359,12 @@ let g:UltiSnipsJumpBackwardTrigger="<A-b>"
 " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
 
+" ALE
+
+" map key jump between errors
+nmap <silent> ]r <Plug>(ale_next_wrap)
+nmap <silent> [r <Plug>(ale_previous_wrap)
+
 " Tagbar Outline
 nmap <leader>o :TagbarToggle<CR>
 
