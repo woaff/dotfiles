@@ -361,6 +361,9 @@ let g:UltiSnipsEditSplit="vertical"
 
 " ALE
 
+" Disable ale echo message
+let g:ale_echo_cursor = 0
+
 " map key jump between errors
 nmap <silent> ]r <Plug>(ale_next_wrap)
 nmap <silent> [r <Plug>(ale_previous_wrap)
