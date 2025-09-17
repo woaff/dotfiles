@@ -370,6 +370,9 @@ let g:ale_virtualtext_cursor = 0
 " Enable ale float preview
 let g:ale_floating_preview = 1
 
+" Enable ale cursor detail
+let g:ale_cursor_detail = 1
+
 " map key jump between errors
 nmap <silent> ]r <Plug>(ale_next_wrap)
 nmap <silent> [r <Plug>(ale_previous_wrap)
