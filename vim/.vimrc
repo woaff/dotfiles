@@ -373,6 +373,9 @@ let g:ale_floating_preview = 1
 " Enable ale cursor detail
 let g:ale_cursor_detail = 1
 
+" Enable ale auto close preview when insert
+let g:ale_close_preview_on_insert = 1
+
 " map key jump between errors
 nmap <silent> ]r <Plug>(ale_next_wrap)
 nmap <silent> [r <Plug>(ale_previous_wrap)
