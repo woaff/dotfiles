@@ -370,6 +370,9 @@ let g:ale_virtualtext_cursor = 0
 " Enable ale float preview
 let g:ale_floating_preview = 1
 
+" Enable ale float window border
+let g:ale_floating_window_border = ['│', '─', '╭', '╮', '╯', '╰', '│', '─']
+
 " Enable ale cursor detail
 let g:ale_cursor_detail = 1
 
