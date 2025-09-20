@@ -296,6 +296,9 @@ let g:airline#extensions#tabline#enabled = 1
 " Enable the number of buffers
 let g:airline#extensions#tabline#buffer_nr_show = 1
 
+" Enable integrate with ale
+let g:airline#extensions#ale#enabled = 1
+
 " vimspector
 " if has('win32unix')
 " 	let &pythonthreedll = 'C:\Users\Administrator\AppData\Local\Programs\Python\Python312\python312.dll'
