@@ -469,6 +469,9 @@ let g:NERDTreeShowHidden = 1
 " Disable bookmark and help
 let g:NERDTreeMinimalUI = 1
 
+" Use minimal menu
+let g:NERDTreeMinimalMenu = 1
+
 " NERDTree Git
 " Enable Nerd Fonts
 let g:NERDTreeGitStatusUseNerdFonts = 1
