@@ -74,6 +74,9 @@ nnoremap gof :eclipseopenfm<CR>
 " :a activates the current ABAP object (Ctrl+F3)
 eclipseuiaction a com.sap.adt.activation.ui.command.singleActivation
 
+" :A activates the inactive ABAP objects (Ctrl+Shift+F3)
+eclipseuiaction A com.sap.adt.activation.ui.command.multiActivation
+
 " :c check ABAP development object (Ctrl+F2)
 eclipseuiaction c com.sap.adt.activation.ui.command.check
 
