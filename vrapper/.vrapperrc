@@ -51,17 +51,17 @@ nnoremap [[ :eclipseprevmember<CR>
 " Next Item (Ctrl+.)
 " eclipseaction eclipsenextitem org.eclipse.ui.navigate.next
 " nnoremap ]q :eclipsenextitem<CR><Esc>
-noremap ]q <Plug>(eclipse-motion:org.eclipse.ui.navigate.next)
+nnoremap ]q <Plug>(eclipse-motion:org.eclipse.ui.navigate.next)
 
 " Previous Item (Ctrl+,)
 " eclipseaction eclipsepreviousitem org.eclipse.ui.navigate.previous
 " nnoremap [q :eclipsepreviousitem<CR><Esc>
-noremap [q <Plug>(eclipse-motion:org.eclipse.ui.navigate.previous)
+nnoremap [q <Plug>(eclipse-motion:org.eclipse.ui.navigate.previous)
 
 " Toggle Breakpoint (Ctrl+Shift+B)
 " eclipseaction eclipsetogglebp org.eclipse.debug.ui.commands.ToggleBreakpoint
 " nnoremap <leader>b :eclipsetogglebp<CR>
-noremap <leader>b <Plug>(eclipse-motion:org.eclipse.debug.ui.commands.ToggleBreakpoint)
+nnoremap <leader>b <Plug>(eclipse-motion:org.eclipse.debug.ui.commands.ToggleBreakpoint)
 
 " Removes All Breakpoints (Alt+R V)
 " eclipseaction eclipsermallbp org.eclipse.debug.ui.commands.RemoveAllBreakpoints
@@ -87,10 +87,10 @@ eclipseuiaction e com.sap.adt.sapgui.ui.launchExecutableObject
 eclipseuiaction o com.sap.adt.ris.search.ui.callSimpleSearch
 
 " gd jumps to the definition or matching block (F3)
-noremap gd <Plug>(eclipse-motion:com.sap.adt.tools.abapsource.ui.navigateTo)
+nnoremap gd <Plug>(eclipse-motion:com.sap.adt.tools.abapsource.ui.navigateTo)
 
 " gr get where used list for an ABAP development object (Ctrl+Shift+G)
-noremap gr <Plug>(eclipse-motion:com.sap.adt.ris.whereused.ui.callWhereUsed)
+nnoremap gr <Plug>(eclipse-motion:com.sap.adt.ris.whereused.ui.callWhereUsed)
 
 " <leader>rn rename (Alt+Shift+R)
-noremap <leader>rn <Plug>(eclipse-motion:com.sap.adt.tools.core.ui.rename)
+nnoremap <leader>rn <Plug>(eclipse-motion:com.sap.adt.tools.core.ui.rename)
