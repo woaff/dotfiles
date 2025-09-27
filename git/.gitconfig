@@ -2,5 +2,7 @@
 	defaultBranch = main
 [core]
 	pager = delta
+[delta]
+	side-by-side = true
 [include]
 	path = ~/.gitconfig_local
