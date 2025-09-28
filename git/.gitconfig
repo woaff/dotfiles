@@ -4,5 +4,7 @@
 	pager = delta
 [delta]
 	side-by-side = true
+[diff]
+	tool = meld
 [include]
 	path = ~/.gitconfig_local
