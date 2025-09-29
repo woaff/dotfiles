@@ -6,5 +6,7 @@
 	side-by-side = true
 [diff]
 	tool = meld
+[difftool]
+	prompt = false
 [include]
 	path = ~/.gitconfig_local
