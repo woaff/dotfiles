@@ -8,5 +8,7 @@
 	tool = meld
 [difftool]
 	prompt = false
+[difftool "meld"]
+	cmd = meld "$LOCAL" "$REMOTE"
 [include]
 	path = ~/.gitconfig_local
