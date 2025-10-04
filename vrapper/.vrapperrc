@@ -94,3 +94,6 @@ nnoremap gr <Plug>(eclipse-motion:com.sap.adt.ris.whereused.ui.callWhereUsed)
 
 " <leader>rn rename (Alt+Shift+R)
 nnoremap <leader>rn <Plug>(eclipse-motion:com.sap.adt.tools.core.ui.rename)
+
+" Increment Number
+nnoremap <A-=> <C-a>
