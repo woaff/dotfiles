@@ -97,3 +97,6 @@ nnoremap <leader>rn <Plug>(eclipse-motion:com.sap.adt.tools.core.ui.rename)
 
 " Increment Number
 nnoremap <A-=> <C-a>
+
+" Decrement Number
+nnoremap <A--> <C-x>
