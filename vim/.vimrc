@@ -719,6 +719,10 @@ augroup lsp_install
 	let g:asyncomplete_auto_popup = 0
 augroup END
 
+function! s:lsp_settings_init() abort
+
+endfunction
+
 call plug#begin()
 Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-surround'
