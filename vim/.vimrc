@@ -720,6 +720,8 @@ augroup lsp_install
 augroup END
 
 function! s:lsp_settings_init() abort
+let lspOpts= #{
+			\ }
 
 endfunction
 
