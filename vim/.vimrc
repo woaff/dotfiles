@@ -721,6 +721,7 @@ augroup END
 
 function! s:lsp_settings_init() abort
 let lspOpts= #{
+			\ aleSupport: v:true,
 			\ }
 
 endfunction
