@@ -723,6 +723,7 @@ function! s:lsp_settings_init() abort
 let lspOpts= #{
 			\ aleSupport: v:true,
 			\ autoComplete: v:false,
+			\ snippetSupport : v:true,
 			\ }
 
 endfunction
