@@ -727,6 +727,8 @@ let lspOpts= #{
 			\ ultisnipsSupport: v:true,
 			\ }
 
+let lspServers = [
+			\ ]
 endfunction
 
 call plug#begin()
