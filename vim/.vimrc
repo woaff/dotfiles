@@ -728,6 +728,12 @@ let lspOpts= #{
 			\ }
 
 let lspServers = [
+			\ #{
+			\   name: 'vimls',
+			\   filetype: 'vim',
+			\   path: '/usr/local/bin/vim-language-server',
+			\   args: ['--stdio']
+			\ },
 			\ ]
 endfunction
 
