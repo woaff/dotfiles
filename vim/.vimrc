@@ -729,6 +729,12 @@ let lspOpts= #{
 
 let lspServers = [
 			\ #{
+			\   name: 'bashls',
+			\   filetype: 'sh',
+			\   path: '/usr/local/bin/bash-language-server',
+			\   args: ['start']
+			\ },
+			\ #{
 			\   name: 'vimls',
 			\   filetype: 'vim',
 			\   path: '/usr/local/bin/vim-language-server',
