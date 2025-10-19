@@ -727,6 +727,8 @@ let lspOpts= #{
 			\ ultisnipsSupport: v:true,
 			\ }
 
+call LspOptionsSet(lspOpts)
+
 let lspServers = [
 			\ #{
 			\   name: 'bashls',
@@ -741,7 +743,14 @@ let lspServers = [
 			\   args: ['--stdio']
 			\ },
 			\ ]
+
+call LspAddServer(lspServers)
 endfunction
+
+augroup LspSetup
+	autocmd!
+	autocmd User LspSetup call s:lsp_settings_init()
+augroup END
 
 call plug#begin()
 Plug 'tpope/vim-abolish'
