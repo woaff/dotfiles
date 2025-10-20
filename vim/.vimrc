@@ -747,6 +747,10 @@ let lspServers = [
 call LspAddServer(lspServers)
 endfunction
 
+function! s:on_lsp_buffer() abort
+	
+endfunction
+
 augroup LspSetup
 	autocmd!
 	autocmd User LspSetup call s:lsp_settings_init()
