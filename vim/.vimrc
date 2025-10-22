@@ -754,6 +754,9 @@ function! s:on_lsp_buffer() abort
 	nnoremap gi :LspGotoImpl<CR>
 	nnoremap gr :LspShowReferences<CR>
 	nnoremap K :LspHover<CR>
+	" diagnostic
+	nnoremap [g :LspDiagPrevWrap<CR>
+	nnoremap ]g :LspDiagNextWrap<CR>
 endfunction
 
 augroup LspSetup
