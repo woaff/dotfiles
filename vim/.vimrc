@@ -757,6 +757,8 @@ function! s:on_lsp_buffer() abort
 	" diagnostic
 	nnoremap [g :LspDiagPrevWrap<CR>
 	nnoremap ]g :LspDiagNextWrap<CR>
+	" rename
+	nnoremap <leader>rn :LspRename<CR>
 endfunction
 
 augroup LspSetup
