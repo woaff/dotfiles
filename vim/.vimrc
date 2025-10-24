@@ -759,6 +759,9 @@ function! s:on_lsp_buffer() abort
 	nnoremap ]g :LspDiagNextWrap<CR>
 	" rename
 	nnoremap <leader>rn :LspRename<CR>
+	" format
+	xnoremap <leader>f <Plug>(LspFormat)
+	nnoremap <leader>f <Plug>(LspFormat)
 endfunction
 
 augroup LspSetup
