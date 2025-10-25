@@ -762,6 +762,9 @@ function! s:on_lsp_buffer() abort
 	" format
 	xnoremap <leader>f <Plug>(LspFormat)
 	nnoremap <leader>f <Plug>(LspFormat)
+	" code action
+	xnoremap <leader>a :LspCodeAction
+	nnoremap <leader>a :LspCodeAction
 endfunction
 
 augroup LspSetup
