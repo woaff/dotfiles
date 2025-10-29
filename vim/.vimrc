@@ -767,6 +767,10 @@ function! s:on_lsp_buffer() abort
 	" code action
 	xnoremap <leader>a :LspCodeAction
 	nnoremap <leader>a :LspCodeAction
+
+	" TAB completion
+	inoremap <silent> <expr> <TAB>   pumvisible() ? "\<C-n>" : "\<TAB>"
+	inoremap <silent> <expr> <S-TAB> pumvisible() ? "\<C-p>" : "\<S-TAB>"
 endfunction
 
 augroup LspSetup
