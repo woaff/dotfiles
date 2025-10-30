@@ -771,6 +771,9 @@ function! s:on_lsp_buffer() abort
 	" TAB completion
 	inoremap <silent> <expr> <TAB>   pumvisible() ? "\<C-n>" : "\<TAB>"
 	inoremap <silent> <expr> <S-TAB> pumvisible() ? "\<C-p>" : "\<S-TAB>"
+
+	" confirm completion
+	inoremap <silent> <expr> <CR>    pumvisible() ? "\<C-y>" : "\<CR>"
 endfunction
 
 augroup LspSetup
