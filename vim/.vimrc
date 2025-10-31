@@ -774,6 +774,14 @@ function! s:on_lsp_buffer() abort
 
 	" confirm completion
 	inoremap <silent> <expr> <CR>    pumvisible() ? "\<C-y>" : "\<CR>"
+
+	" trigger completion
+	if has('nvim')
+		inoremap <c-space> <C-x><C-o>
+	else
+		execute "set <A-/>=\e/"
+		inoremap <A-/> <C-x><C-o>
+	endif
 endfunction
 
 augroup LspSetup
