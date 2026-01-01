@@ -719,6 +719,9 @@ augroup lsp_install
 	let g:asyncomplete_auto_popup = 0
 augroup END
 
+" Toggle vim lsp start up
+let b:vim_lsp_startup = 0
+
 function! s:lsp_settings_init() abort
 let lspOpts= #{
 			\ aleSupport: v:true,
@@ -786,8 +789,10 @@ endfunction
 
 augroup LspSetup
 	autocmd!
-	autocmd User LspSetup call s:lsp_settings_init()
-	autocmd User LspAttached call s:on_lsp_buffer()
+	if get(b:, 'vim_lsp_startup')
+		autocmd User LspSetup call s:lsp_settings_init()
+		autocmd User LspAttached call s:on_lsp_buffer()
+	endif
 augroup END
 
 call plug#begin()
