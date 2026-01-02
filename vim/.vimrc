@@ -730,6 +730,7 @@ let lspOpts= #{
 			\ noNewlineInCompletion: v:true,
 			\ snippetSupport : v:true,
 			\ ultisnipsSupport: v:true,
+			\ vsnipSupport: v:false,
 			\ }
 
 call LspOptionsSet(lspOpts)
