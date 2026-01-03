@@ -731,6 +731,7 @@ let lspOpts= #{
 			\ snippetSupport : v:true,
 			\ ultisnipsSupport: v:true,
 			\ vsnipSupport: v:false,
+			\ useBufferCompletion: v:true,
 			\ }
 
 call LspOptionsSet(lspOpts)
