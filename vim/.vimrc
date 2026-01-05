@@ -727,6 +727,7 @@ function! s:lsp_settings_init() abort
 let lspOpts= #{
 			\ aleSupport: v:true,
 			\ autoComplete: v:false,
+			\ autoHighlight: v:true,
 			\ completionMatcher: 'fuzzy',
 			\ noNewlineInCompletion: v:true,
 			\ snippetSupport : v:true,
