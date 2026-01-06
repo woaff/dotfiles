@@ -729,6 +729,7 @@ let lspOpts= #{
 			\ autoComplete: v:false,
 			\ autoHighlight: v:true,
 			\ completionMatcher: 'fuzzy',
+			\ completionTextEdit: v:false,
 			\ noNewlineInCompletion: v:true,
 			\ snippetSupport : v:true,
 			\ ultisnipsSupport: v:true,
