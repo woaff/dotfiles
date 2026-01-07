@@ -731,6 +731,7 @@ let lspOpts= #{
 			\ completionMatcher: 'fuzzy',
 			\ completionTextEdit: v:false,
 			\ noNewlineInCompletion: v:true,
+			\ popupBorder: v:true,
 			\ snippetSupport : v:true,
 			\ ultisnipsSupport: v:true,
 			\ vsnipSupport: v:false,
