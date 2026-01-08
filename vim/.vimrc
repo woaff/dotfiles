@@ -33,7 +33,7 @@ set termwinsize=8*0
 set colorcolumn=80
 set complete+=k
 set dictionary+=~/.vim/dict/language.txt
-set completeopt+=popup
+set completeopt+=popup,noinsert
 syntax enable
 filetype plugin indent on
 
