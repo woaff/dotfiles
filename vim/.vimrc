@@ -732,6 +732,7 @@ let lspOpts= #{
 			\ autoPopulateDiags: v:false,
 			\ completionMatcher: 'fuzzy',
 			\ completionTextEdit: v:false,
+			\ hoverFallback: v:true,
 			\ noNewlineInCompletion: v:true,
 			\ popupBorder: v:true,
 			\ snippetSupport : v:true,
