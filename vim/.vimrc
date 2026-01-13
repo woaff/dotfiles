@@ -735,6 +735,7 @@ let lspOpts= #{
 			\ hoverFallback: v:true,
 			\ noNewlineInCompletion: v:true,
 			\ outlineOnRight: v:true, 
+			\ outlineWinSize: 20,
 			\ popupBorder: v:true,
 			\ snippetSupport : v:true,
 			\ ultisnipsSupport: v:true,
