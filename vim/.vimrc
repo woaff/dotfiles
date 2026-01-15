@@ -735,6 +735,7 @@ let lspOpts= #{
 			\ hoverFallback: v:true,
 			\ noNewlineInCompletion: v:true,
 			\ omniComplete: v:true,
+			\ omniCompleteAllowBare: v:true,
 			\ outlineOnRight: v:true, 
 			\ outlineWinSize: 20,
 			\ popupBorder: v:true,
