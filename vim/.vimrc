@@ -302,6 +302,9 @@ augroup END
 " Disable backspace delete pairs
 let g:AutoPairsMapBS = 0
 
+" Disable enter insert indented line
+let g:AutoPairsMapCR = 0
+
 " airline
 " Enable the list of buffers
 let g:airline#extensions#tabline#enabled = 1
