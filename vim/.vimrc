@@ -843,6 +843,7 @@ Plug 'dyng/ctrlsf.vim'
 Plug 'google/vim-searchindex'
 " Plug 'junegunn/limelight.vim'
 " Plug 'junegunn/goyo.vim'
+Plug 'junegunn/vim-peekaboo'
 Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'npm ci'}
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
