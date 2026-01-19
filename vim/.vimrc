@@ -755,13 +755,19 @@ let lspServers = [
 			\   name: 'bashls',
 			\   filetype: 'sh',
 			\   path: '/usr/local/bin/bash-language-server',
-			\   args: ['start']
+			\   args: ['start'],
+			\ },
+			\ #{
+			\   name: 'clangd',
+			\   filetype: ['c', 'cpp'],
+			\   path: '/usr/bin/clangd',
+			\   args: ['--background-index', '--clang-tidy'],
 			\ },
 			\ #{
 			\   name: 'vimls',
 			\   filetype: 'vim',
 			\   path: '/usr/local/bin/vim-language-server',
-			\   args: ['--stdio']
+			\   args: ['--stdio'],
 			\ },
 			\ ]
 
