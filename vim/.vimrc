@@ -764,6 +764,12 @@ let lspServers = [
 			\   args: ['--background-index', '--clang-tidy'],
 			\ },
 			\ #{
+			\   name: 'gopls',
+			\   filetype: 'go',
+			\   path: '/usr/local/bin/gopls',
+			\   args: ['serve'],
+			\ },
+			\ #{
 			\   name: 'vimls',
 			\   filetype: 'vim',
 			\   path: '/usr/local/bin/vim-language-server',
