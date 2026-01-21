@@ -770,6 +770,21 @@ let lspServers = [
 			\   args: ['serve'],
 			\ },
 			\ #{
+			\   name: 'jdtls',
+			\   filetype: 'java',
+			\   path: '/usr/local/bin/jdtls',
+			\   args: [],
+			\   initializationOptions: #{
+			\       settings: #{
+			\           java: #{
+			\               completion: #{
+			\                   filteredTypes: ["com.sun.*", "java.awt.*", "jdk.*", "org.graalvm.*", "sun.*", "javax.awt.*", "javax.swing.*"],
+			\               },
+			\           },
+			\       },
+			\   },
+			\ },
+			\ #{
 			\   name: 'vimls',
 			\   filetype: 'vim',
 			\   path: '/usr/local/bin/vim-language-server',
