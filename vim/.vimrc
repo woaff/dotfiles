@@ -785,6 +785,12 @@ let lspServers = [
 			\   },
 			\ },
 			\ #{
+			\   name: 'lemminx',
+			\   filetype: ['xml', 'xsd', 'xsl', 'xslt', 'svg'],
+			\   path: '/usr/local/bin/lemminx',
+			\   args: [],
+			\ },
+			\ #{
 			\   name: 'vimls',
 			\   filetype: 'vim',
 			\   path: '/usr/local/bin/vim-language-server',
