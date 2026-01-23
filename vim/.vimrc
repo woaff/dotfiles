@@ -791,6 +791,12 @@ let lspServers = [
 			\   args: [],
 			\ },
 			\ #{
+			\   name: 'marksman',
+			\   filetype: ['markdown'],
+			\   path: '/usr/local/bin/marksman',
+			\   args: ['server'],
+			\ },
+			\ #{
 			\   name: 'vimls',
 			\   filetype: 'vim',
 			\   path: '/usr/local/bin/vim-language-server',
