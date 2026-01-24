@@ -797,6 +797,17 @@ let lspServers = [
 			\   args: ['server'],
 			\ },
 			\ #{
+			\   name: 'pyright',
+			\   filetype: 'python',
+			\   path: '/usr/local/bin/pyright-langserver',
+			\   args: ['--stdio'],
+			\	workspaceConfig: #{
+			\     python: #{
+			\       pythonPath: '/usr/bin/python',
+			\	  },
+			\	},
+			\ },
+			\ #{
 			\   name: 'vimls',
 			\   filetype: 'vim',
 			\   path: '/usr/local/bin/vim-language-server',
