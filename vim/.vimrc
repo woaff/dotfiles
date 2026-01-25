@@ -808,6 +808,12 @@ let lspServers = [
 			\	},
 			\ },
 			\ #{
+			\   name: 'tsserver',
+			\   filetype: ['javascript', 'javascriptreact', 'typescript', 'typescriptreact'],
+			\   path: '/usr/local/bin/typescript-language-server',
+			\   args: ['--stdio'],
+			\ },
+			\ #{
 			\   name: 'vimls',
 			\   filetype: 'vim',
 			\   path: '/usr/local/bin/vim-language-server',
