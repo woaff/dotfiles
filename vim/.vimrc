@@ -819,6 +819,12 @@ let lspServers = [
 			\   path: '/usr/local/bin/vim-language-server',
 			\   args: ['--stdio'],
 			\ },
+			\ #{
+			\   name: 'vscode-css-server',
+			\   filetype: ['css'],
+			\   path: '/usr/local/bin/vscode-css-language-server',
+			\   args: ['--stdio'],
+			\ },
 			\ ]
 
 call LspAddServer(lspServers)
