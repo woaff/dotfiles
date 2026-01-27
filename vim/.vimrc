@@ -825,6 +825,12 @@ let lspServers = [
 			\   path: '/usr/local/bin/vscode-css-language-server',
 			\   args: ['--stdio'],
 			\ },
+			\ #{
+			\   name: 'vscode-eslint-server',
+			\   filetype: ['javascript', 'javascriptreact', 'typescript', 'typescriptreact'],
+			\   path: '/usr/local/bin/vscode-eslint-language-server',
+			\   args: ['--stdio'],
+			\ },
 			\ ]
 
 call LspAddServer(lspServers)
