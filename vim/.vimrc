@@ -837,6 +837,12 @@ let lspServers = [
 			\   path: '/usr/local/bin/vscode-html-language-server',
 			\   args: ['--stdio'],
 			\ },
+			\ #{
+			\   name: 'vscode-json-server',
+			\   filetype: ['json' , 'jsonc'],
+			\   path: '/usr/local/bin/vscode-json-language-server',
+			\   args: ['--stdio'],
+			\ },
 			\ ]
 
 call LspAddServer(lspServers)
