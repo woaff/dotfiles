@@ -843,6 +843,12 @@ let lspServers = [
 			\   path: '/usr/local/bin/vscode-json-language-server',
 			\   args: ['--stdio'],
 			\ },
+			\ #{
+			\   name: 'yamlls',
+			\   filetype: ['yaml'],
+			\   path: '/usr/local/bin/yaml-language-server',
+			\   args: ['--stdio'],
+			\ },
 			\ ]
 
 call LspAddServer(lspServers)
