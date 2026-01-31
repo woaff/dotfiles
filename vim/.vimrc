@@ -764,6 +764,15 @@ let lspServers = [
 			\   args: ['--background-index', '--clang-tidy'],
 			\ },
 			\ #{
+			\   name: 'efm-langserver',
+			\   filetype: ['css', 'html', 'javascript', 'json', 'jsonc', 'markdown', 'python', 'sh', 'toml', 'vim', 'yaml'],
+			\   path: '/usr/local/bin/efm-langserver',
+			\   args: [],
+			\   initializationOptions: #{
+			\       documentFormatting: v:true
+			\   },
+			\ },
+			\ #{
 			\   name: 'gopls',
 			\   filetype: 'go',
 			\   path: '/usr/local/bin/gopls',
