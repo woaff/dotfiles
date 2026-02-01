@@ -758,6 +758,12 @@ let lspServers = [
 			\   args: ['start'],
 			\ },
 			\ #{
+			\   name: 'cds-lsp',
+			\   filetype: ['cds'],
+			\   path: '/usr/local/bin/cds-lsp',
+			\   args: ['--stdio'],
+			\ },
+			\ #{
 			\   name: 'clangd',
 			\   filetype: ['c', 'cpp'],
 			\   path: '/usr/bin/clangd',
