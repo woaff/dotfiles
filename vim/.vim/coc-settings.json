@@ -41,6 +41,11 @@
             "filetypes": ["sh"],
             "ignoredRootPaths": ["~"]
         },
+        "cds": {
+            "command": "cds-lsp",
+            "args": ["--stdio"],
+            "filetypes": ["cds"]
+        },
         "vimls": {
             "command": "vim-language-server",
             "args": ["--stdio"],
