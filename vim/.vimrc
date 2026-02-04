@@ -985,6 +985,7 @@ Plug 'mg979/vim-visual-multi'
 Plug 'osyo-manga/vim-over'
 Plug 'markonm/traces.vim'
 Plug 'mattn/emmet-vim'
+Plug 'ap/vim-css-color'
 Plug 'wolandark/vim-live-server'
 " Plug 'shougo/vimshell.vim'
 " Plug 'Shougo/vimproc.vim', {'do' : 'make'}
