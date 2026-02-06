@@ -592,6 +592,7 @@ let g:efm_langserver_settings#config_file = $HOME . '/.config/efm-langserver/con
 let g:efm_langserver_settings#customlist = 1
 
 let g:efm_langserver_settings#filetype_whitelist = [
+			\ 'cds',
 			\ 'css',
             \ 'html',
             \ 'javascript',
