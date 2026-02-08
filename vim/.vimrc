@@ -972,6 +972,7 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
 Plug 'dhruvasagar/vim-table-mode'
 Plug 'img-paste-devs/img-paste.vim'
 Plug 'godlygeek/tabular'
+Plug 'junegunn/vim-easy-align'
 " Plug 'vimwiki/vimwiki'
 Plug 'pbrisbin/vim-mkdir'
 Plug 'v0lkc/cds.vim'
