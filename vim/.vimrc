@@ -460,6 +460,14 @@ let g:vim_markdown_conceal = 0
 " Disable conceal for code block
 let g:vim_markdown_conceal_code_blocks = 0
 
+" Easy Align
+
+" Start interactive EasyAlign in visual mode (e.g. vipga)
+xmap ga <Plug>(EasyAlign)
+
+" Start interactive EasyAlign for a motion/text object (e.g. gaip)
+nmap ga <Plug>(EasyAlign)
+
 " vimwiki
 let g:vimwiki_list = [{'path': '~/vimwiki/',
 		                      \ 'syntax': 'markdown', 'ext': 'md'}]
