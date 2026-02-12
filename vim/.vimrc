@@ -630,7 +630,7 @@ augroup LspEFM
   autocmd User lsp_setup call lsp#register_server({
       \ 'name': 'efm-langserver',
       \ 'cmd': {server_info->['efm-langserver']},
-      \ 'allowlist': [ 'css', 'html', 'javascript', 'json', 'jsonc', 'markdown', 'python', 'sh',  'toml', 'vim', 'yaml' ],
+      \ 'allowlist': [ 'cds', 'css', 'html', 'javascript', 'json', 'jsonc', 'markdown', 'python', 'sh',  'toml', 'vim', 'yaml' ],
       \ })
 augroup END
 
