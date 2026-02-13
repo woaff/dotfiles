@@ -1,6 +1,7 @@
 {
     "coc.preferences.formatOnSave": true,
     "prettier.disableLanguages": ["markdown"],
+    "prettier.printWidth": 80,
     "prettier.tabWidth": 4,
     "prettier.singleQuote": true,
     "suggest.autoTrigger": "trigger",
