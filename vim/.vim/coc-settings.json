@@ -3,6 +3,7 @@
     "prettier.disableLanguages": ["markdown"],
     "prettier.printWidth": 80,
     "prettier.tabWidth": 4,
+    "prettier.useTabs": false,
     "prettier.singleQuote": true,
     "suggest.autoTrigger": "trigger",
     "inlayHint.enable": false,
