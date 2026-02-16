@@ -6,6 +6,7 @@
     "prettier.useTabs": false,
     "prettier.semi": false,
     "prettier.singleQuote": true,
+    "prettier.trailingComma": "none",
     "suggest.autoTrigger": "trigger",
     "inlayHint.enable": false,
     "signature.enable": false,
