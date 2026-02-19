@@ -1,6 +1,16 @@
 version: 2
 
 tools:
+    cds-eslint: &cds-eslint
+        lint-command: 'eslint --stdin --stdin-filename ${INPUT}'
+        lint-stdin: true
+        lint-ignore-exit-code: true
+        lint-after-open: true
+        lint-formats:
+            - '%+P%f'
+            - '%*[ ]%l:%c%*[ ]%t%*[^ ]%*[ ]%m'
+            - '%-O'
+
     json-jsonlint: &json-jsonlint
         lint-command: 'jsonlint -c'
         lint-stdin: true
@@ -52,6 +62,9 @@ tools:
         lint-stdin: true
 
 languages:
+    cds:
+        - <<: *cds-eslint
+
     css:
         - <<: *prettier
 
