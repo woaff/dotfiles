@@ -1029,6 +1029,7 @@ Plug 'tommcdo/vim-exchange'
 Plug 'github/copilot.vim'
 Plug 'chriszarate/yazi.vim'
 Plug 'tsuyoshicho/vim-efm-langserver-settings'
+Plug 'fidian/hexmode'
 call plug#end()
 
 " Use gruvbox theme
