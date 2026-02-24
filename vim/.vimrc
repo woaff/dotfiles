@@ -882,7 +882,7 @@ function! s:on_lsp_buffer() abort
 	" navigate
 	nnoremap gd :LspGotoDefinition<CR>
 	nnoremap gy :LspGotoTypeDef<CR>
-	nnoremap gi :LspGotoImpl<CR>
+	nnoremap gI :LspGotoImpl<CR>
 	nnoremap gr :LspShowReferences<CR>
 	nnoremap K :LspHover<CR>
 	" diagnostic
