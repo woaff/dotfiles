@@ -999,6 +999,7 @@ Plug 'markonm/traces.vim'
 Plug 'mattn/emmet-vim'
 Plug 'ap/vim-css-color'
 Plug 'alvan/vim-closetag'
+Plug 'andrewradev/tagalong.vim'
 Plug 'wolandark/vim-live-server'
 " Plug 'shougo/vimshell.vim'
 " Plug 'Shougo/vimproc.vim', {'do' : 'make'}
