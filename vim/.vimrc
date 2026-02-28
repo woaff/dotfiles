@@ -543,6 +543,10 @@ let g:vrc_output_buffer_name = '__REST_response.json'
 " Run a format command on the respones buffer
 let g:vrc_auto_format_response_patterns = { 'json':'jq' }
 
+" emmet
+" Remap trigger key
+let g:user_emmet_leader_key='<C-y>'
+
 " fzf
 nnoremap <leader>z :Files<CR>
 nnoremap <leader>h :History<CR>
