@@ -547,6 +547,10 @@ let g:vrc_auto_format_response_patterns = { 'json':'jq' }
 " Remap trigger key
 let g:user_emmet_leader_key='<C-y>'
 
+" Enable filetype
+let g:user_emmet_install_global = 0
+autocmd FileType html,css EmmetInstall
+
 " fzf
 nnoremap <leader>z :Files<CR>
 nnoremap <leader>h :History<CR>
