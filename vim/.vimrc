@@ -35,6 +35,7 @@ set complete+=k
 set dictionary+=~/.vim/dict/language.txt
 set completeopt+=popup,noinsert
 set laststatus=2
+set showtabline=2
 syntax enable
 filetype plugin indent on
 
