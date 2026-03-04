@@ -310,8 +310,12 @@ let g:AutoPairsMapCR = 0
 " airline
 " Enable the list of buffers
 let g:airline#extensions#tabline#enabled = 1
+
 " Enable the number of buffers
 let g:airline#extensions#tabline#buffer_nr_show = 1
+
+" Show only the filename
+let g:airline#extensions#tabline#fnamemod = ':t'
 
 " Enable integrate with ale
 let g:airline#extensions#ale#enabled = 1
