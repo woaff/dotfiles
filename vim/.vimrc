@@ -320,6 +320,9 @@ let g:airline#extensions#tabline#fnamemod = ':t'
 " Enable integrate with ale
 let g:airline#extensions#ale#enabled = 1
 
+" Set airline theme
+let g:airline_theme='gruvbox'
+
 " vimspector
 " if has('win32unix')
 " 	let &pythonthreedll = 'C:\Users\Administrator\AppData\Local\Programs\Python\Python312\python312.dll'
