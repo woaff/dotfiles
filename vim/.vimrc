@@ -320,6 +320,9 @@ let g:airline#extensions#tabline#fnamemod = ':t'
 " Enable integrate with ale
 let g:airline#extensions#ale#enabled = 1
 
+" Integrate with powerline font
+let g:airline_powerline_fonts = 0
+
 " Set airline theme
 let g:airline_theme='gruvbox'
 
