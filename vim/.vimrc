@@ -317,6 +317,9 @@ let g:airline#extensions#tabline#buffer_nr_show = 1
 " Show only the filename
 let g:airline#extensions#tabline#fnamemod = ':t'
 
+" Show close button
+let g:airline#extensions#tabline#show_close_button = 0
+
 " Enable integrate with ale
 let g:airline#extensions#ale#enabled = 1
 
