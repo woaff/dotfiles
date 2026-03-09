@@ -320,6 +320,9 @@ let g:airline#extensions#tabline#show_buffers = 1
 " Show only the filename
 let g:airline#extensions#tabline#fnamemod = ':t'
 
+" Set formatter for display buffers 
+let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
+
 " Show close button
 let g:airline#extensions#tabline#show_close_button = 0
 
