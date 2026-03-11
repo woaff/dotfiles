@@ -314,6 +314,9 @@ let g:airline#extensions#tabline#enabled = 1
 " Enable the number of buffers
 let g:airline#extensions#tabline#buffer_nr_show = 1
 
+" Enable the number of tabs
+let g:airline#extensions#tabline#show_tab_nr = 1
+
 " Enable display buffers with single tab
 let g:airline#extensions#tabline#show_buffers = 1
 
