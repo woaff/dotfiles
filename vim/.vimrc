@@ -326,6 +326,9 @@ let g:airline#extensions#tabline#show_tabs = 1
 " Enable display tab type
 let g:airline#extensions#tabline#show_tab_type = 1
 
+" Disable display open splits
+let g:airline#extensions#tabline#show_splits = 0
+
 " Show only the filename
 let g:airline#extensions#tabline#fnamemod = ':t'
 
