@@ -323,6 +323,9 @@ let g:airline#extensions#tabline#show_buffers = 1
 " Enable display tabs
 let g:airline#extensions#tabline#show_tabs = 1
 
+" Enable display tab count
+let g:airline#extensions#tabline#show_tab_count = 1
+
 " Enable display tab type
 let g:airline#extensions#tabline#show_tab_type = 1
 
