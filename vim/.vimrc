@@ -329,6 +329,9 @@ let g:airline#extensions#tabline#show_tab_count = 1
 " Enable display tab type
 let g:airline#extensions#tabline#show_tab_type = 1
 
+" Set tab number type
+let g:airline#extensions#tabline#tab_nr_type = 1
+
 " Disable display open splits
 let g:airline#extensions#tabline#show_splits = 0
 
