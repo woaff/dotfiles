@@ -463,6 +463,9 @@ let g:ctrlsf_auto_focus = {
 " Trigger a highlight in the appropriate direction when pressing these keys:
 let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
 
+" Enable plugin
+let g:qs_enable = 1
+
 " MarkdownPreview Config
 
 " set to 1, Vim will refresh Markdown when saving the buffer or
