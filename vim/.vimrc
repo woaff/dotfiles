@@ -466,6 +466,9 @@ let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
 " Enable plugin
 let g:qs_enable = 1
 
+" Set max chars on a line
+let g:qs_max_chars = 80
+
 " MarkdownPreview Config
 
 " set to 1, Vim will refresh Markdown when saving the buffer or
