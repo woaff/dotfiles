@@ -604,7 +604,7 @@ autocmd FileType html,css EmmetInstall
 " closetag
 
 " Enable filetype
-let g:closetag_filetypes = 'html,xhtml,phtml'
+let g:closetag_filetypes = 'html,xhtml,phtml,xml'
 
 " fzf
 nnoremap <leader>z :Files<CR>
