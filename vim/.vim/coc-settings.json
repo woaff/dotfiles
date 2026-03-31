@@ -32,6 +32,7 @@
     "xml.format.splitAttributes": true,
     "xml.format.preservedNewlines": 0,
     "xml.format.preserveEmptyContent": true,
+    "xml.format.preserveAttributeLineBreaks": false,
     "clangd.path": "~/.config/coc/extensions/coc-clangd-data/install/19.1.2/clangd_19.1.2/bin/clangd",
     "clangd.arguments": ["--function-arg-placeholders=0"],
     "java.configuration.runtimes": [
