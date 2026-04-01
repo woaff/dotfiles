@@ -30,6 +30,7 @@
     "xml.java.home": "/usr/lib/jvm/java-17-openjdk-17.0.14.0.7-6.fc41",
     "xml.format.enabled": true,
     "xml.format.splitAttributes": true,
+    "xml.format.joinCDATALines": false,
     "xml.format.preservedNewlines": 0,
     "xml.format.preserveEmptyContent": true,
     "xml.format.preserveAttributeLineBreaks": false,
