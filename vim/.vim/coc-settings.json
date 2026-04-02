@@ -31,6 +31,7 @@
     "xml.format.enabled": true,
     "xml.format.splitAttributes": true,
     "xml.format.joinCDATALines": false,
+    "xml.format.joinCommentLines": false,
     "xml.format.preservedNewlines": 0,
     "xml.format.preserveEmptyContent": true,
     "xml.format.preserveAttributeLineBreaks": false,
