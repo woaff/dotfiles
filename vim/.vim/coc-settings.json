@@ -20,6 +20,7 @@
         "<CR>": ["expandable?", "expand", "open"],
         "v": "open:vsplit"
     },
+    "python.formatting.provider": "autopep8",
     "toml.formatter.alignEntries": true,
     "toml.formatter.arrayAutoExpand": false,
     "toml.formatter.arrayAutoCollapse": false,
