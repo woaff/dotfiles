@@ -21,6 +21,7 @@
         "v": "open:vsplit"
     },
     "python.formatting.provider": "autopep8",
+    "python.formatting.autopep8Path": "autopep8",
     "toml.formatter.alignEntries": true,
     "toml.formatter.arrayAutoExpand": false,
     "toml.formatter.arrayAutoCollapse": false,
