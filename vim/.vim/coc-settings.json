@@ -51,7 +51,6 @@
             "default": true
         }
     ],
-    "coc.preferences.useQuickfixForLocations": true,
     "java.jdt.ls.lombokSupport.enabled": false,
     "java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx1G -Xms100m -Xlog:disable -javaagent:\"$HOME/.config/coc/extensions/node_modules/coc-java-lombok/jar/lombok.jar\"",
     "languageserver": {
