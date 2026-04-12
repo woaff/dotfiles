@@ -65,6 +65,11 @@
             "args": ["--stdio"],
             "filetypes": ["cds"]
         },
+        "gopls": {
+            "command": "gopls",
+            "args": [],
+            "filetypes": ["go"]
+        },
         "vimls": {
             "command": "vim-language-server",
             "args": ["--stdio"],
