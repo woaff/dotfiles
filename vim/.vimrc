@@ -665,16 +665,16 @@ let g:efm_langserver_settings#customlist = 1
 let g:efm_langserver_settings#filetype_whitelist = [
 			\ 'cds',
 			\ 'css',
-            \ 'html',
-            \ 'javascript',
-            \ 'json',
-            \ 'jsonc',
-            \ 'markdown',
-            \ 'python',
-            \ 'sh',
-            \ 'toml',
-            \ 'vim',
-            \ 'yaml',
+			\ 'html',
+			\ 'javascript',
+			\ 'json',
+			\ 'jsonc',
+			\ 'markdown',
+			\ 'python',
+			\ 'sh',
+			\ 'toml',
+			\ 'vim',
+			\ 'yaml',
 			\ ]
 
 " lsp
