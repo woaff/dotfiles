@@ -665,6 +665,7 @@ let g:efm_langserver_settings#customlist = 1
 let g:efm_langserver_settings#filetype_whitelist = [
 			\ 'cds',
 			\ 'css',
+			\ 'go',
 			\ 'html',
 			\ 'javascript',
 			\ 'json',
