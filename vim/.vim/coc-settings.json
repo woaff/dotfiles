@@ -90,6 +90,7 @@
             "filetypes": [
                 "cds",
                 "css",
+                "go",
                 "html",
                 "javascript",
                 "json",
