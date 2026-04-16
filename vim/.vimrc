@@ -844,7 +844,7 @@ let lspServers = [
 			\ },
 			\ #{
 			\   name: 'efm-langserver',
-			\   filetype: ['cds', 'css', 'html', 'javascript', 'json', 'jsonc', 'markdown', 'python', 'sh', 'toml', 'vim', 'yaml'],
+			\   filetype: ['cds', 'css', 'go', 'html', 'javascript', 'json', 'jsonc', 'markdown', 'python', 'sh', 'toml', 'vim', 'yaml'],
 			\   path: '/usr/local/bin/efm-langserver',
 			\   args: [],
 			\   initializationOptions: #{
