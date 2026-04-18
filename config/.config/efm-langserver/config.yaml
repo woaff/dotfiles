@@ -11,6 +11,10 @@ tools:
             - '%*[ ]%l:%c%*[ ]%t%*[^ ]%*[ ]%m'
             - '%-O'
 
+    golangci-lint: &golangci-lint
+        lint-command: 'golangci-lint run ${INPUT}'
+        lint-stdin: true
+
     javascript-eslint: &javascript-eslint
         lint-command: 'eslint --stdin --stdin-filename ${INPUT}'
         lint-stdin: true
@@ -77,6 +81,9 @@ languages:
 
     css:
         - <<: *prettier
+
+    go:
+        - <<: *golangci-lint
 
     html:
         - <<: *prettier
