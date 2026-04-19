@@ -9,6 +9,7 @@
     "prettier.trailingComma": "none",
     "prettier.bracketSpacing": true,
     "prettier.bracketSameLine": false,
+    "prettier.singleAttributePerLine": false,
     "suggest.autoTrigger": "trigger",
     "inlayHint.enable": false,
     "signature.enable": false,
