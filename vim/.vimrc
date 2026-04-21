@@ -157,6 +157,7 @@ let g:coc_global_extensions = [
 		\ 'coc-eslint',
 		\ 'coc-toml',
 		\ 'coc-clangd',
+		\ 'coc-clang-format-style-options',
 		\ 'coc-cmake',
 		\ 'coc-java',
 		\ 'coc-java-debug',
