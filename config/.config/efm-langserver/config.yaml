@@ -49,6 +49,12 @@ tools:
         format-command: 'autopep8 -'
         format-stdin: true
 
+    python-pylint: &python-pylint
+        lint-command: 'pylint --output-format text --score no --msg-template {path}:{line}:{column}:{C}:{msg} ${INPUT}'
+        lint-stdin: true
+        lint-formats:
+            - '%f:%l:%c:%t:%m'
+
     sh-shellcheck: &sh-shellcheck
         lint-command: 'shellcheck -f gcc -x'
         lint-source: 'shellcheck'
@@ -105,6 +111,7 @@ languages:
 
     python:
         - <<: *python-autopep8
+        - <<: *python-pylint
 
     sh:
         - <<: *sh-shellcheck
