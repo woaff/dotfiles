@@ -68,6 +68,8 @@ tools:
         format-stdin: true
 
     toml-taplo: &toml-taplo
+        lint-command: 'taplo lint ${INPUT}'
+        lint-stdin: true
         format-command: 'taplo format ${INPUT}'
         format-stdin: true
 
