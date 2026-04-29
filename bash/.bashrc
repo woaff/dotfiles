@@ -35,8 +35,8 @@ export FZF_DEFAULT_OPTS='--preview "[[ $(file --mime {}) =~ binary ]] && echo {}
 source ~/fzf-tab-completion/bash/fzf-bash-completion.sh
 bind -x '"\t": fzf_bash_completion'
 
-export HTTP_PORT=10810
-export SOCKS_PORT=10811
+export HTTP_PORT=10809
+export SOCKS_PORT=10808
 export HOSTIP=$(awk '/nameserver/ {print $2}' /etc/resolv.conf)
 
 alias proxy='
