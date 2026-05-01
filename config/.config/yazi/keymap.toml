@@ -5,6 +5,8 @@
 [mgr]
 
 prepend_keymap = [
+	# Lazygit
+	{ on = "<C-g>", run = "shell lazygit --block --confirm", desc = "Lazygit" },
 ]
 
 keymap = [
