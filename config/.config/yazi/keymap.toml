@@ -7,6 +7,8 @@
 prepend_keymap = [
 	# Lazygit
 	{ on = "<C-g>", run = "shell lazygit --block --confirm", desc = "Lazygit" },
+	# compress
+	{ on = [ "c", "a" ], run = "plugin compress", desc = "Archive selected files" },
 ]
 
 keymap = [
