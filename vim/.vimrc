@@ -301,6 +301,18 @@ augroup JsonToJsonc
     autocmd FileType json set filetype=jsonc
 augroup END
 
+" fugitive
+
+function! ToggleGitStatus() abort
+	for l:winnr in range(1, winnr('$'))
+		if !empty(getwinvar(l:winnr, 'fugitive_status'))
+			execute l:winnr 'close'
+			return
+		endif
+	endfor
+	keepalt Git
+endfunction
+
 " auto-pairs
 " Disable backspace delete pairs
 let g:AutoPairsMapBS = 0
