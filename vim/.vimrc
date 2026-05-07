@@ -313,6 +313,8 @@ function! ToggleGitStatus() abort
 	keepalt Git
 endfunction
 
+nnoremap <leader>g :call ToggleGitStatus()<CR>
+
 " auto-pairs
 " Disable backspace delete pairs
 let g:AutoPairsMapBS = 0
