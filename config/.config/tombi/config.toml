@@ -1,3 +1,4 @@
 [format.rules]
 array-bracket-space-width = 1
 array-comma-space-width = 1
+indent-style = "tab"
