@@ -4,3 +4,4 @@ array-comma-space-width = 1
 indent-style = "tab"
 inline-table-brace-space-width = 1
 inline-table-comma-space-width = 1
+key-value-equals-sign-alignment = true
