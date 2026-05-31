@@ -7,3 +7,4 @@ inline-table-comma-space-width = 1
 key-value-equals-sign-alignment = true
 key-value-equals-sign-space-width = 1
 line-width = 160
+string-quote-style = "preserve"
