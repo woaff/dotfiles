@@ -35,6 +35,14 @@ edit = [
 	{ run = "code %s",            desc = "code",         for = "windows", orphan = true },
 	{ run = "code -w %s",         desc = "code (block)", for = "windows", block = true },
 ]
+play = [
+	{ run = "xdg-open %s1",    desc = "Play", for = "linux", orphan = true },
+	{ run = "open %s",         desc = "Play", for = "macos" },
+	{ run = 'start "" %s1',    desc = "Play", for = "windows", orphan = true },
+	{ run = "termux-open %s1", desc = "Play", for = "android" },
+	{ run = "mediainfo %s1; echo 'Press enter to exit'; read _", desc = "Show media info", for = "unix", block = true },
+	{ run = "mediainfo %s1 & pause", desc = "Show media info", for = "windows", block = true },
+]
 open = [
 	{ run = "xdg-open %s1",    desc = "Open", for = "linux" },
 	{ run = "open %s",         desc = "Open", for = "macos" },
@@ -50,11 +58,6 @@ reveal = [
 ]
 extract = [
 	{ run = "ya pub extract --list %s", desc = "Extract here" },
-]
-play = [
-	{ run = 'mpv --force-window "$@"', for = "unix", orphan = true },
-	{ run = 'mpv --force-window %*',   for = "windows", orphan = true },
-	{ run = '''mediainfo "$1"; echo "Press enter to exit"; read _''', block = true, desc = "Show media info", for = "unix" },
 ]
 
 [open]
