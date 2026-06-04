@@ -1046,6 +1046,7 @@ Plug 'junegunn/vim-peekaboo'
 Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'npm ci'}
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+" Plug 'itchyny/lightline.vim'
 Plug 'morhetz/gruvbox'
 Plug 'scrooloose/nerdtree', { 'on': ['NERDTreeToggle', 'NERDTreeFind'] }
 Plug 'xuyuanp/nerdtree-git-plugin'
