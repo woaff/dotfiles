@@ -368,6 +368,10 @@ let g:airline_powerline_fonts = 0
 " Set airline theme
 let g:airline_theme='gruvbox'
 
+" lightline
+let g:lightline = {
+			\ }
+
 " vimspector
 " if has('win32unix')
 " 	let &pythonthreedll = 'C:\Users\Administrator\AppData\Local\Programs\Python\Python312\python312.dll'
