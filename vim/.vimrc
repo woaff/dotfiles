@@ -370,6 +370,10 @@ let g:airline_theme='gruvbox'
 
 " lightline
 let g:lightline = {
+			\ 'enable': {
+			\   'statusline': 0,
+			\   'tabline': 0,
+			\ },
 			\ }
 
 " vimspector
