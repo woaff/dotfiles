@@ -374,6 +374,7 @@ let g:lightline = {
 			\   'statusline': 0,
 			\   'tabline': 0,
 			\ },
+			\ 'colorscheme': 'gruvbox',
 			\ }
 
 " vimspector
