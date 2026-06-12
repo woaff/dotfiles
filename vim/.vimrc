@@ -382,6 +382,10 @@ let g:lightline = {
 			\              [ 'percent' ],
 			\              [ 'fileformat', 'fileencoding', 'filetype' ] ],
 			\ },
+			\ 'tabline': {
+			\   'left': [ ['buffers'] ],
+			\   'right': [ ['bufnum'] ],
+			\ },
 			\ }
 
 " vimspector
