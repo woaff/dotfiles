@@ -386,6 +386,9 @@ let g:lightline = {
 			\   'left': [ ['buffers'] ],
 			\   'right': [ ['bufnum'] ],
 			\ },
+			\ 'component_expand': {
+			\   'buffers': 'lightline#bufferline#buffers'
+			\ },
 			\ }
 
 " vimspector
