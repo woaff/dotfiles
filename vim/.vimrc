@@ -389,6 +389,9 @@ let g:lightline = {
 			\ 'component_expand': {
 			\   'buffers': 'lightline#bufferline#buffers'
 			\ },
+			\ 'component_type': {
+			\   'buffers': 'tabsel'
+			\ },
 			\ }
 
 " vimspector
