@@ -392,6 +392,8 @@ let g:lightline = {
 			\ 'component_type': {
 			\   'buffers': 'tabsel'
 			\ },
+			\ 'component_function': {
+			\ },
 			\ }
 
 " vimspector
