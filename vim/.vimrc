@@ -377,6 +377,7 @@ let g:lightline = {
 			\ 'colorscheme': 'gruvbox',
 			\ 'active': {
 			\   'left': [ [ 'mode', 'paste' ],
+			\             [ 'githunks' ],
 			\             [ 'readonly', 'filename', 'modified' ] ],
 			\   'right': [ [ 'lineinfo' ],
 			\              [ 'percent' ],
