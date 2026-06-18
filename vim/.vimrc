@@ -394,6 +394,7 @@ let g:lightline = {
 			\   'buffers': 'tabsel'
 			\ },
 			\ 'component_function': {
+			\   'githunks': 'LightlineGitGutter',
 			\ },
 			\ }
 
