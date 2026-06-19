@@ -395,6 +395,7 @@ let g:lightline = {
 			\ },
 			\ 'component_function': {
 			\   'githunks': 'LightlineGitGutter',
+			\   'gitbranch': 'FugitiveHead',
 			\ },
 			\ }
 
