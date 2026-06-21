@@ -407,6 +407,9 @@ function! LightlineGitGutter()
 	return printf('+%d ~%d -%d', l:added, l:modified, l:removed)
 endfunction
 
+" Enable buffer number 
+let g:lightline#bufferline#show_number = 1
+
 " vimspector
 " if has('win32unix')
 " 	let &pythonthreedll = 'C:\Users\Administrator\AppData\Local\Programs\Python\Python312\python312.dll'
