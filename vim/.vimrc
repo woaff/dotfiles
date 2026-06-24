@@ -416,6 +416,9 @@ let g:lightline#bufferline#enable_devicons = 1
 " Disable nerdfont
 let g:lightline#bufferline#enable_nerdfont = 0
 
+" Set icon position
+let g:lightline#bufferline#icon_position = 'right'
+
 " vimspector
 " if has('win32unix')
 " 	let &pythonthreedll = 'C:\Users\Administrator\AppData\Local\Programs\Python\Python312\python312.dll'
