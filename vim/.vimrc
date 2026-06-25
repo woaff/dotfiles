@@ -407,6 +407,9 @@ function! LightlineGitGutter()
 	return printf('+%d ~%d -%d', l:added, l:modified, l:removed)
 endfunction
 
+" Set unnamed buffer name
+let g:lightline#bufferline#unnamed = '[No Name]'
+
 " Enable buffer number 
 let g:lightline#bufferline#show_number = 1
 
