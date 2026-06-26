@@ -410,6 +410,9 @@ endfunction
 " Set unnamed buffer name
 let g:lightline#bufferline#unnamed = '[No Name]'
 
+" Disable unicode symbol
+let g:lightline#bufferline#unicode_symbols = 0
+
 " Enable buffer number 
 let g:lightline#bufferline#show_number = 1
 
