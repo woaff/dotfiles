@@ -410,6 +410,9 @@ endfunction
 " Set unnamed buffer name
 let g:lightline#bufferline#unnamed = '[No Name]'
 
+" Set filename modifier
+let g:lightline#bufferline#filename_modifier = ':.'
+
 " Disable unicode symbol
 let g:lightline#bufferline#unicode_symbols = 0
 
