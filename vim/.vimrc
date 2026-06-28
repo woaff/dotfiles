@@ -413,6 +413,9 @@ let g:lightline#bufferline#unnamed = '[No Name]'
 " Set filename modifier
 let g:lightline#bufferline#filename_modifier = ':.'
 
+" Disable shorten path
+let g:lightline#bufferline#shorten_path = 0
+
 " Disable unicode symbol
 let g:lightline#bufferline#unicode_symbols = 0
 
