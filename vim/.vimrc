@@ -416,6 +416,9 @@ let g:lightline#bufferline#filename_modifier = ':.'
 " Disable shorten path
 let g:lightline#bufferline#shorten_path = 0
 
+" Enable smart path
+let g:lightline#bufferline#smart_path = 1
+
 " Disable unicode symbol
 let g:lightline#bufferline#unicode_symbols = 0
 
