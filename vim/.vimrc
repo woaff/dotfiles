@@ -419,6 +419,9 @@ let g:lightline#bufferline#shorten_path = 0
 " Enable smart path
 let g:lightline#bufferline#smart_path = 1
 
+" Set more buffers
+let g:lightline#bufferline#more_buffers = '...'
+
 " Disable unicode symbol
 let g:lightline#bufferline#unicode_symbols = 0
 
